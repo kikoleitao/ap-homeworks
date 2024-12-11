@@ -26,9 +26,12 @@ class LogisticRegression(nn.Module):
         pytorch to make weights and biases, have a look at
         https://pytorch.org/docs/stable/nn.html
         """
-        super().__init__()
+        super(LogisticRegression, self).__init__()
         # In a pytorch module, the declarations of layers needs to come after
         # the super __init__ line, otherwise the magic doesn't work.
+        
+        self.layer = nn.Linear(n_features, n_classes)
+        self.activation = nn.Sigmoid()
 
     def forward(self, x, **kwargs):
         """
@@ -44,7 +47,12 @@ class LogisticRegression(nn.Module):
         forward pass -- this is enough for it to figure out how to do the
         backward pass.
         """
-        raise NotImplementedError
+        
+        y = self.layer(x)
+        
+        # TODO should we use activation or not? In lab they do, but here says in comment to not use
+        #P = self.activation(Z)
+        return y
 
 
 class FeedforwardNetwork(nn.Module):
@@ -63,9 +71,21 @@ class FeedforwardNetwork(nn.Module):
         attributes that each FeedforwardNetwork instance has. Note that nn
         includes modules for several activation functions and dropout as well.
         """
-        super().__init__()
-        # Implement me!
-        raise NotImplementedError
+        super(FeedforwardNetwork, self).__init__()
+        
+        self.layers = nn.ModuleList()
+        self.activation = nn.ReLU() if activation_type == 'relu' else nn.Tanh()
+
+        # Input layer
+        self.layers.append(nn.Linear(n_features, hidden_size))
+        
+        # Hidden layers
+        for _ in range(layers - 1):
+            self.layers.append(nn.Linear(hidden_size, hidden_size))
+            self.layers.append(nn.Dropout(p=dropout))
+        
+        # Output layer
+        self.layers.append(nn.Linear(hidden_size, n_classes))
 
     def forward(self, x, **kwargs):
         """
@@ -75,7 +95,9 @@ class FeedforwardNetwork(nn.Module):
         the output logits from x. This will include using various hidden
         layers, pointwise nonlinear functions, and dropout.
         """
-        raise NotImplementedError
+        for layer in self.layers[:-1]:  # Apply activation and dropout to all but the last layer
+            x = self.activation(layer(x))
+        return self.layers[-1](x)  # Final layer returns logits
 
 
 def train_batch(X, y, model, optimizer, criterion, **kwargs):
@@ -96,7 +118,17 @@ def train_batch(X, y, model, optimizer, criterion, **kwargs):
     This function should return the loss (tip: call loss.item()) to get the
     loss as a numerical value that is not part of the computation graph.
     """
-    raise NotImplementedError
+    # clear the gradients
+    optimizer.zero_grad()
+    # compute the model output
+    yhat = model(X)
+    # calculate loss
+    loss = criterion(yhat, y)
+    # backpropagate error
+    loss.backward()
+    # update model weights
+    optimizer.step()
+    return loss.item()
 
 
 def predict(model, X):
