@@ -49,9 +49,6 @@ class LogisticRegression(nn.Module):
         """
         
         y = self.layer(x)
-        
-        # TODO should we use activation or not? In lab they do, but here says in comment to not use
-        #P = self.activation(Z)
         return y
 
 
