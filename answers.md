@@ -3,18 +3,18 @@
 ## 1) "Identify the learning rate that achieved the highest validation accuracy, reporting corresponding test and validation accuracy. Plot the training and validation losses for each configuration, and compare the differences between the validation loss curves, explaining these differences by relating to the learning rate values."
 
 lr-0.00001:
-val acc = 0.4587
-test acc = 0.4673
+val acc: 0.4694
+test acc: 0.4623
 
 lr-0.001:
-val acc = 0.5249
-test acc = 0.5237
+val acc: 0.5264
+test acc: 0.5247
 
 lr-0.1:
-val acc = 0.3910
-test acc = 0.4107
+val acc: 0.3689
+test acc: 0.3843
 
-The learning rate that achieved the highest validation accuracy was 0.001, yielding a validation accuracy of 0.5249 and a test accuracy of 0.5237.
+The learning rate that achieved the highest validation accuracy was 0.001, yielding a validation accuracy of 0.5264 and a test accuracy of 0.5247.
 
 Smallest Learning Rate (0.00001)
 For the smallest learning rate of 0.00001, the training and validation losses decrease steadily but very slowly over 100 epochs. The small updates to the model parameters result in slow convergence. While this approach avoids overshooting or divergence, it would require significantly more epochs to achieve competitive performance compared to other models.
@@ -34,14 +34,14 @@ Among the three models, the learning rate of 0.001 demonstrates the best perform
 ## a) "(a) (8 points) Train 2 models: one using the default hyperparameters and another with batch_size 512 and the remaining hyperparameters at their default value. Plot the train and validation losses for both, report the test and validation accuracy for both and explain the differences in both performance and time of execution."
 
 batch_size-default64:
-val acc = 0.5848
-test acc = 0.5863
-time = 1m 56s
+val acc: 0.5862
+test acc: 0.5833
+time: 2m 26s
 
 batch_size-512:
-val acc = 0.5078
-test acc = 0.5320
-time = 1m 20s
+val acc: 0.5085
+test acc: 0.5347
+time: 1m 39s
 
 
 Comparison of Batch Sizes: 64 vs. 512
@@ -59,16 +59,16 @@ In conclusion, choosing a batch size involves a trade-off. Larger batch sizes of
 ## b) (9 points) Train the model setting dropout to each value in {0.01, 0.25, 0.5} while keep ing all other hyperparameters at their default values. Report the final validation and test accuracies and plot the training and validation losses for the three configurations. Analyze and explain the results. 
 
 dropout-0.01:
-val acc: 0.5833
-test acc: 0.5777
+val acc: 0.5776
+test acc: 0.5700
 
 dropout-0.25:
-val acc: 0.5791
-test acc: 0.5840
+val acc: 0.5969
+test acc: 0.5887
 
 dropout-0.5:
-val acc: 0.5848
-test acc: 0.5877
+val acc: 0.6054
+test acc: 0.5887
 
 Analysis of Dropout Rates: 0.01, 0.25, and 0.5
 At first glance, the training and validation loss plots for the three models appear similar. However, closer inspection reveals key differences worth explaining.
@@ -91,12 +91,12 @@ Overall, the dropout-0.5 model achieves the best generalization and test accurac
 
 
 momentum-0.0:
-val acc: 0.5848
-test acc: 0.5863
+val acc: 0.5862
+test acc: 0.5833
 
 momentum-0.9:
-val acc: 0.6204
-test acc: 0.6137
+val acc: 0.6175
+test acc: 0.6130
 
 Analysis of Momentum: 0.0 vs. 0.9
 Momentum-0.0 Model

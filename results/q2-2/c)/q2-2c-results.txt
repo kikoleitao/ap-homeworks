@@ -2,813 +2,813 @@ c)
 python hw1-q2.py mlp -momentum [0.0/0.9]
 
 (IST_DL21_Env) kiko@kiko-VivoBook-ASUSLaptop-X421EQ-S433EQ:~/repos/AP/ap-homeworks$ python hw1-q2.py mlp -momentum 0.0
-initial val acc: 0.1766
+initial val acc: 0.1645
 Training epoch 1
-train loss: 1.7665 | val loss: 1.7481 | val acc: 0.2685
+train loss: 1.7606 | val loss: 1.7370 | val acc: 0.2443
 Training epoch 2
-train loss: 1.7249 | val loss: 1.7079 | val acc: 0.3027
+train loss: 1.7114 | val loss: 1.6883 | val acc: 0.3056
 Training epoch 3
-train loss: 1.6788 | val loss: 1.6604 | val acc: 0.3170
+train loss: 1.6564 | val loss: 1.6349 | val acc: 0.3597
 Training epoch 4
-train loss: 1.6240 | val loss: 1.6089 | val acc: 0.3597
+train loss: 1.6005 | val loss: 1.5795 | val acc: 0.4152
 Training epoch 5
-train loss: 1.5725 | val loss: 1.5569 | val acc: 0.3775
+train loss: 1.5442 | val loss: 1.5251 | val acc: 0.4302
 Training epoch 6
-train loss: 1.5197 | val loss: 1.5087 | val acc: 0.4017
+train loss: 1.4901 | val loss: 1.4775 | val acc: 0.4323
 Training epoch 7
-train loss: 1.4740 | val loss: 1.4760 | val acc: 0.4138
+train loss: 1.4515 | val loss: 1.4475 | val acc: 0.4409
 Training epoch 8
-train loss: 1.4369 | val loss: 1.4360 | val acc: 0.4452
+train loss: 1.4192 | val loss: 1.4122 | val acc: 0.4509
 Training epoch 9
-train loss: 1.4147 | val loss: 1.4117 | val acc: 0.4551
+train loss: 1.3903 | val loss: 1.3913 | val acc: 0.4608
 Training epoch 10
-train loss: 1.3906 | val loss: 1.3900 | val acc: 0.4601
+train loss: 1.3709 | val loss: 1.3710 | val acc: 0.4701
 Training epoch 11
-train loss: 1.3708 | val loss: 1.3734 | val acc: 0.4630
+train loss: 1.3505 | val loss: 1.3564 | val acc: 0.4729
 Training epoch 12
-train loss: 1.3548 | val loss: 1.3594 | val acc: 0.4687
+train loss: 1.3327 | val loss: 1.3440 | val acc: 0.4758
 Training epoch 13
-train loss: 1.3422 | val loss: 1.3478 | val acc: 0.4687
+train loss: 1.3248 | val loss: 1.3322 | val acc: 0.4779
 Training epoch 14
-train loss: 1.3311 | val loss: 1.3380 | val acc: 0.4836
+train loss: 1.3157 | val loss: 1.3267 | val acc: 0.4900
 Training epoch 15
-train loss: 1.3191 | val loss: 1.3278 | val acc: 0.4815
+train loss: 1.3059 | val loss: 1.3138 | val acc: 0.4872
 Training epoch 16
-train loss: 1.3043 | val loss: 1.3249 | val acc: 0.4694
+train loss: 1.2948 | val loss: 1.3128 | val acc: 0.4808
 Training epoch 17
-train loss: 1.2980 | val loss: 1.3145 | val acc: 0.4779
+train loss: 1.2852 | val loss: 1.3030 | val acc: 0.4872
 Training epoch 18
-train loss: 1.2915 | val loss: 1.3082 | val acc: 0.4893
+train loss: 1.2769 | val loss: 1.2958 | val acc: 0.4879
 Training epoch 19
-train loss: 1.2814 | val loss: 1.2947 | val acc: 0.5028
+train loss: 1.2656 | val loss: 1.2825 | val acc: 0.5000
 Training epoch 20
-train loss: 1.2693 | val loss: 1.2858 | val acc: 0.4893
+train loss: 1.2581 | val loss: 1.2777 | val acc: 0.5028
 Training epoch 21
-train loss: 1.2679 | val loss: 1.2809 | val acc: 0.4886
+train loss: 1.2529 | val loss: 1.2735 | val acc: 0.4972
 Training epoch 22
-train loss: 1.2574 | val loss: 1.2833 | val acc: 0.4907
+train loss: 1.2498 | val loss: 1.2713 | val acc: 0.4972
 Training epoch 23
-train loss: 1.2481 | val loss: 1.2670 | val acc: 0.5192
+train loss: 1.2365 | val loss: 1.2600 | val acc: 0.5235
 Training epoch 24
-train loss: 1.2403 | val loss: 1.2567 | val acc: 0.5242
+train loss: 1.2319 | val loss: 1.2494 | val acc: 0.5157
 Training epoch 25
-train loss: 1.2354 | val loss: 1.2585 | val acc: 0.5278
+train loss: 1.2280 | val loss: 1.2509 | val acc: 0.5342
 Training epoch 26
-train loss: 1.2275 | val loss: 1.2527 | val acc: 0.5107
+train loss: 1.2219 | val loss: 1.2482 | val acc: 0.5157
 Training epoch 27
-train loss: 1.2203 | val loss: 1.2404 | val acc: 0.5185
+train loss: 1.2132 | val loss: 1.2348 | val acc: 0.5235
 Training epoch 28
-train loss: 1.2136 | val loss: 1.2453 | val acc: 0.5249
+train loss: 1.2097 | val loss: 1.2412 | val acc: 0.5271
 Training epoch 29
-train loss: 1.2114 | val loss: 1.2319 | val acc: 0.5242
+train loss: 1.2025 | val loss: 1.2291 | val acc: 0.5249
 Training epoch 30
-train loss: 1.2081 | val loss: 1.2272 | val acc: 0.5256
+train loss: 1.1987 | val loss: 1.2212 | val acc: 0.5292
 Training epoch 31
-train loss: 1.2003 | val loss: 1.2188 | val acc: 0.5356
+train loss: 1.1925 | val loss: 1.2153 | val acc: 0.5335
 Training epoch 32
-train loss: 1.1924 | val loss: 1.2156 | val acc: 0.5321
+train loss: 1.1875 | val loss: 1.2124 | val acc: 0.5342
 Training epoch 33
-train loss: 1.1868 | val loss: 1.2118 | val acc: 0.5285
+train loss: 1.1842 | val loss: 1.2087 | val acc: 0.5385
 Training epoch 34
-train loss: 1.1844 | val loss: 1.2079 | val acc: 0.5306
+train loss: 1.1785 | val loss: 1.2046 | val acc: 0.5313
 Training epoch 35
-train loss: 1.1761 | val loss: 1.2031 | val acc: 0.5271
+train loss: 1.1716 | val loss: 1.2004 | val acc: 0.5321
 Training epoch 36
-train loss: 1.1751 | val loss: 1.2050 | val acc: 0.5356
+train loss: 1.1673 | val loss: 1.2029 | val acc: 0.5321
 Training epoch 37
-train loss: 1.1670 | val loss: 1.1999 | val acc: 0.5356
+train loss: 1.1624 | val loss: 1.2020 | val acc: 0.5392
 Training epoch 38
-train loss: 1.1688 | val loss: 1.1922 | val acc: 0.5399
+train loss: 1.1609 | val loss: 1.1921 | val acc: 0.5385
 Training epoch 39
-train loss: 1.1622 | val loss: 1.1915 | val acc: 0.5406
+train loss: 1.1544 | val loss: 1.1889 | val acc: 0.5456
 Training epoch 40
-train loss: 1.1521 | val loss: 1.1882 | val acc: 0.5449
+train loss: 1.1516 | val loss: 1.1832 | val acc: 0.5513
 Training epoch 41
-train loss: 1.1511 | val loss: 1.1827 | val acc: 0.5370
+train loss: 1.1465 | val loss: 1.1819 | val acc: 0.5377
 Training epoch 42
-train loss: 1.1458 | val loss: 1.1780 | val acc: 0.5456
+train loss: 1.1405 | val loss: 1.1785 | val acc: 0.5442
 Training epoch 43
-train loss: 1.1408 | val loss: 1.1824 | val acc: 0.5399
+train loss: 1.1380 | val loss: 1.1838 | val acc: 0.5335
 Training epoch 44
-train loss: 1.1383 | val loss: 1.1712 | val acc: 0.5477
+train loss: 1.1341 | val loss: 1.1725 | val acc: 0.5527
 Training epoch 45
-train loss: 1.1337 | val loss: 1.1691 | val acc: 0.5584
+train loss: 1.1318 | val loss: 1.1724 | val acc: 0.5513
 Training epoch 46
-train loss: 1.1322 | val loss: 1.1798 | val acc: 0.5420
+train loss: 1.1307 | val loss: 1.1774 | val acc: 0.5506
 Training epoch 47
-train loss: 1.1225 | val loss: 1.1661 | val acc: 0.5556
+train loss: 1.1199 | val loss: 1.1690 | val acc: 0.5541
 Training epoch 48
-train loss: 1.1179 | val loss: 1.1605 | val acc: 0.5506
+train loss: 1.1198 | val loss: 1.1622 | val acc: 0.5548
 Training epoch 49
-train loss: 1.1139 | val loss: 1.1542 | val acc: 0.5506
+train loss: 1.1163 | val loss: 1.1573 | val acc: 0.5470
 Training epoch 50
-train loss: 1.1061 | val loss: 1.1512 | val acc: 0.5591
+train loss: 1.1078 | val loss: 1.1536 | val acc: 0.5591
 Training epoch 51
-train loss: 1.1079 | val loss: 1.1482 | val acc: 0.5605
+train loss: 1.1083 | val loss: 1.1527 | val acc: 0.5563
 Training epoch 52
-train loss: 1.1040 | val loss: 1.1466 | val acc: 0.5620
+train loss: 1.1032 | val loss: 1.1497 | val acc: 0.5541
 Training epoch 53
-train loss: 1.1012 | val loss: 1.1445 | val acc: 0.5534
+train loss: 1.1000 | val loss: 1.1498 | val acc: 0.5534
 Training epoch 54
-train loss: 1.0937 | val loss: 1.1414 | val acc: 0.5463
+train loss: 1.0985 | val loss: 1.1439 | val acc: 0.5520
 Training epoch 55
-train loss: 1.0921 | val loss: 1.1515 | val acc: 0.5691
+train loss: 1.0927 | val loss: 1.1549 | val acc: 0.5584
 Training epoch 56
-train loss: 1.0887 | val loss: 1.1397 | val acc: 0.5598
+train loss: 1.0882 | val loss: 1.1395 | val acc: 0.5584
 Training epoch 57
-train loss: 1.0845 | val loss: 1.1335 | val acc: 0.5577
+train loss: 1.0851 | val loss: 1.1403 | val acc: 0.5670
 Training epoch 58
-train loss: 1.0773 | val loss: 1.1387 | val acc: 0.5563
+train loss: 1.0766 | val loss: 1.1441 | val acc: 0.5563
 Training epoch 59
-train loss: 1.0761 | val loss: 1.1258 | val acc: 0.5620
+train loss: 1.0766 | val loss: 1.1327 | val acc: 0.5563
 Training epoch 60
-train loss: 1.0761 | val loss: 1.1269 | val acc: 0.5655
+train loss: 1.0803 | val loss: 1.1333 | val acc: 0.5620
 Training epoch 61
-train loss: 1.0651 | val loss: 1.1281 | val acc: 0.5605
+train loss: 1.0725 | val loss: 1.1310 | val acc: 0.5613
 Training epoch 62
-train loss: 1.0616 | val loss: 1.1248 | val acc: 0.5698
+train loss: 1.0686 | val loss: 1.1293 | val acc: 0.5655
 Training epoch 63
-train loss: 1.0608 | val loss: 1.1185 | val acc: 0.5776
+train loss: 1.0664 | val loss: 1.1249 | val acc: 0.5698
 Training epoch 64
-train loss: 1.0568 | val loss: 1.1218 | val acc: 0.5755
+train loss: 1.0592 | val loss: 1.1240 | val acc: 0.5712
 Training epoch 65
-train loss: 1.0544 | val loss: 1.1179 | val acc: 0.5798
+train loss: 1.0616 | val loss: 1.1254 | val acc: 0.5812
 Training epoch 66
-train loss: 1.0487 | val loss: 1.1172 | val acc: 0.5791
+train loss: 1.0544 | val loss: 1.1286 | val acc: 0.5726
 Training epoch 67
-train loss: 1.0442 | val loss: 1.1266 | val acc: 0.5741
+train loss: 1.0495 | val loss: 1.1351 | val acc: 0.5755
 Training epoch 68
-train loss: 1.0440 | val loss: 1.1108 | val acc: 0.5662
+train loss: 1.0467 | val loss: 1.1180 | val acc: 0.5655
 Training epoch 69
-train loss: 1.0412 | val loss: 1.1068 | val acc: 0.5812
+train loss: 1.0504 | val loss: 1.1200 | val acc: 0.5741
 Training epoch 70
-train loss: 1.0371 | val loss: 1.1047 | val acc: 0.5783
+train loss: 1.0439 | val loss: 1.1109 | val acc: 0.5848
 Training epoch 71
-train loss: 1.0311 | val loss: 1.1048 | val acc: 0.5833
+train loss: 1.0361 | val loss: 1.1113 | val acc: 0.5869
 Training epoch 72
-train loss: 1.0294 | val loss: 1.1178 | val acc: 0.5698
+train loss: 1.0349 | val loss: 1.1218 | val acc: 0.5684
 Training epoch 73
-train loss: 1.0282 | val loss: 1.1062 | val acc: 0.5748
+train loss: 1.0323 | val loss: 1.1141 | val acc: 0.5691
 Training epoch 74
-train loss: 1.0241 | val loss: 1.0963 | val acc: 0.5783
+train loss: 1.0321 | val loss: 1.1049 | val acc: 0.5819
 Training epoch 75
-train loss: 1.0226 | val loss: 1.0990 | val acc: 0.5726
+train loss: 1.0316 | val loss: 1.1043 | val acc: 0.5662
 Training epoch 76
-train loss: 1.0175 | val loss: 1.1055 | val acc: 0.5741
+train loss: 1.0247 | val loss: 1.1062 | val acc: 0.5769
 Training epoch 77
-train loss: 1.0161 | val loss: 1.1056 | val acc: 0.5755
+train loss: 1.0207 | val loss: 1.1097 | val acc: 0.5712
 Training epoch 78
-train loss: 1.0118 | val loss: 1.0892 | val acc: 0.5748
+train loss: 1.0175 | val loss: 1.0969 | val acc: 0.5798
 Training epoch 79
-train loss: 1.0094 | val loss: 1.1052 | val acc: 0.5684
+train loss: 1.0189 | val loss: 1.1033 | val acc: 0.5662
 Training epoch 80
-train loss: 1.0052 | val loss: 1.0883 | val acc: 0.5812
+train loss: 1.0174 | val loss: 1.0978 | val acc: 0.5819
 Training epoch 81
-train loss: 1.0064 | val loss: 1.0882 | val acc: 0.5812
+train loss: 1.0154 | val loss: 1.0953 | val acc: 0.5805
 Training epoch 82
-train loss: 0.9987 | val loss: 1.1016 | val acc: 0.5776
+train loss: 1.0076 | val loss: 1.0944 | val acc: 0.5783
 Training epoch 83
-train loss: 0.9933 | val loss: 1.0882 | val acc: 0.5798
+train loss: 1.0039 | val loss: 1.0942 | val acc: 0.5726
 Training epoch 84
-train loss: 1.0001 | val loss: 1.0943 | val acc: 0.5826
+train loss: 1.0074 | val loss: 1.0949 | val acc: 0.5819
 Training epoch 85
-train loss: 0.9930 | val loss: 1.1119 | val acc: 0.5691
+train loss: 1.0022 | val loss: 1.1175 | val acc: 0.5662
 Training epoch 86
-train loss: 0.9891 | val loss: 1.0913 | val acc: 0.5862
+train loss: 0.9956 | val loss: 1.0982 | val acc: 0.5840
 Training epoch 87
-train loss: 0.9889 | val loss: 1.1341 | val acc: 0.5634
+train loss: 1.0021 | val loss: 1.1302 | val acc: 0.5598
 Training epoch 88
-train loss: 0.9795 | val loss: 1.0811 | val acc: 0.5840
+train loss: 0.9885 | val loss: 1.0886 | val acc: 0.5876
 Training epoch 89
-train loss: 0.9807 | val loss: 1.1265 | val acc: 0.5776
+train loss: 0.9875 | val loss: 1.1257 | val acc: 0.5776
 Training epoch 90
-train loss: 0.9801 | val loss: 1.0795 | val acc: 0.5826
+train loss: 0.9908 | val loss: 1.0859 | val acc: 0.5726
 Training epoch 91
-train loss: 0.9766 | val loss: 1.0724 | val acc: 0.5890
+train loss: 0.9841 | val loss: 1.0776 | val acc: 0.5862
 Training epoch 92
-train loss: 0.9744 | val loss: 1.0785 | val acc: 0.5905
+train loss: 0.9847 | val loss: 1.0833 | val acc: 0.5905
 Training epoch 93
-train loss: 0.9752 | val loss: 1.0751 | val acc: 0.5855
+train loss: 0.9801 | val loss: 1.0770 | val acc: 0.5890
 Training epoch 94
-train loss: 0.9670 | val loss: 1.1111 | val acc: 0.5734
+train loss: 0.9779 | val loss: 1.1114 | val acc: 0.5741
 Training epoch 95
-train loss: 0.9666 | val loss: 1.0771 | val acc: 0.5826
+train loss: 0.9755 | val loss: 1.0869 | val acc: 0.5862
 Training epoch 96
-train loss: 0.9661 | val loss: 1.0702 | val acc: 0.5897
+train loss: 0.9743 | val loss: 1.0812 | val acc: 0.5912
 Training epoch 97
-train loss: 0.9594 | val loss: 1.0890 | val acc: 0.5791
+train loss: 0.9709 | val loss: 1.0912 | val acc: 0.5798
 Training epoch 98
-train loss: 0.9594 | val loss: 1.0776 | val acc: 0.5912
+train loss: 0.9704 | val loss: 1.0799 | val acc: 0.5876
 Training epoch 99
-train loss: 0.9563 | val loss: 1.1411 | val acc: 0.5577
+train loss: 0.9650 | val loss: 1.1467 | val acc: 0.5534
 Training epoch 100
-train loss: 0.9528 | val loss: 1.0763 | val acc: 0.5862
+train loss: 0.9646 | val loss: 1.0834 | val acc: 0.5876
 Training epoch 101
-train loss: 0.9488 | val loss: 1.0727 | val acc: 0.5826
+train loss: 0.9631 | val loss: 1.0766 | val acc: 0.5848
 Training epoch 102
-train loss: 0.9481 | val loss: 1.0677 | val acc: 0.5912
+train loss: 0.9598 | val loss: 1.0741 | val acc: 0.5883
 Training epoch 103
-train loss: 0.9421 | val loss: 1.0762 | val acc: 0.5883
+train loss: 0.9540 | val loss: 1.0704 | val acc: 0.5983
 Training epoch 104
-train loss: 0.9443 | val loss: 1.0626 | val acc: 0.5926
+train loss: 0.9549 | val loss: 1.0673 | val acc: 0.5940
 Training epoch 105
-train loss: 0.9423 | val loss: 1.0830 | val acc: 0.5869
+train loss: 0.9515 | val loss: 1.0790 | val acc: 0.5919
 Training epoch 106
-train loss: 0.9406 | val loss: 1.0751 | val acc: 0.5876
+train loss: 0.9471 | val loss: 1.0879 | val acc: 0.5826
 Training epoch 107
-train loss: 0.9361 | val loss: 1.0814 | val acc: 0.5897
+train loss: 0.9472 | val loss: 1.0800 | val acc: 0.5940
 Training epoch 108
-train loss: 0.9302 | val loss: 1.0796 | val acc: 0.5840
+train loss: 0.9465 | val loss: 1.0696 | val acc: 0.5848
 Training epoch 109
-train loss: 0.9307 | val loss: 1.0679 | val acc: 0.5883
+train loss: 0.9384 | val loss: 1.0710 | val acc: 0.5947
 Training epoch 110
-train loss: 0.9298 | val loss: 1.0756 | val acc: 0.5798
+train loss: 0.9414 | val loss: 1.0824 | val acc: 0.5791
 Training epoch 111
-train loss: 0.9268 | val loss: 1.0633 | val acc: 0.5940
+train loss: 0.9354 | val loss: 1.0678 | val acc: 0.5912
 Training epoch 112
-train loss: 0.9206 | val loss: 1.0576 | val acc: 0.5940
+train loss: 0.9369 | val loss: 1.0634 | val acc: 0.5869
 Training epoch 113
-train loss: 0.9168 | val loss: 1.0603 | val acc: 0.5990
+train loss: 0.9327 | val loss: 1.0600 | val acc: 0.6019
 Training epoch 114
-train loss: 0.9198 | val loss: 1.0718 | val acc: 0.5819
+train loss: 0.9313 | val loss: 1.0830 | val acc: 0.5826
 Training epoch 115
-train loss: 0.9164 | val loss: 1.0719 | val acc: 0.5869
+train loss: 0.9261 | val loss: 1.0707 | val acc: 0.5983
 Training epoch 116
-train loss: 0.9112 | val loss: 1.0648 | val acc: 0.5890
+train loss: 0.9246 | val loss: 1.0707 | val acc: 0.5905
 Training epoch 117
-train loss: 0.9117 | val loss: 1.0686 | val acc: 0.5976
+train loss: 0.9239 | val loss: 1.0774 | val acc: 0.5905
 Training epoch 118
-train loss: 0.9092 | val loss: 1.0754 | val acc: 0.5848
+train loss: 0.9226 | val loss: 1.0786 | val acc: 0.5897
 Training epoch 119
-train loss: 0.9044 | val loss: 1.0687 | val acc: 0.5862
+train loss: 0.9192 | val loss: 1.0666 | val acc: 0.5954
 Training epoch 120
-train loss: 0.9041 | val loss: 1.0809 | val acc: 0.5919
+train loss: 0.9163 | val loss: 1.0770 | val acc: 0.5862
 Training epoch 121
-train loss: 0.9034 | val loss: 1.0521 | val acc: 0.5940
+train loss: 0.9169 | val loss: 1.0542 | val acc: 0.5990
 Training epoch 122
-train loss: 0.8977 | val loss: 1.0749 | val acc: 0.6047
+train loss: 0.9111 | val loss: 1.0811 | val acc: 0.5983
 Training epoch 123
-train loss: 0.9013 | val loss: 1.1204 | val acc: 0.5634
+train loss: 0.9058 | val loss: 1.1095 | val acc: 0.5741
 Training epoch 124
-train loss: 0.8978 | val loss: 1.0594 | val acc: 0.6026
+train loss: 0.9046 | val loss: 1.0606 | val acc: 0.6019
 Training epoch 125
-train loss: 0.8914 | val loss: 1.0530 | val acc: 0.6011
+train loss: 0.9070 | val loss: 1.0606 | val acc: 0.6047
 Training epoch 126
-train loss: 0.8888 | val loss: 1.0743 | val acc: 0.5855
+train loss: 0.9007 | val loss: 1.0824 | val acc: 0.5783
 Training epoch 127
-train loss: 0.8849 | val loss: 1.0615 | val acc: 0.5933
+train loss: 0.8971 | val loss: 1.0653 | val acc: 0.6019
 Training epoch 128
-train loss: 0.8851 | val loss: 1.0554 | val acc: 0.5933
+train loss: 0.9001 | val loss: 1.0723 | val acc: 0.5926
 Training epoch 129
-train loss: 0.8806 | val loss: 1.0926 | val acc: 0.5783
+train loss: 0.8951 | val loss: 1.0755 | val acc: 0.5926
 Training epoch 130
-train loss: 0.8822 | val loss: 1.0648 | val acc: 0.5890
+train loss: 0.8907 | val loss: 1.0640 | val acc: 0.5940
 Training epoch 131
-train loss: 0.8786 | val loss: 1.0517 | val acc: 0.6011
+train loss: 0.8914 | val loss: 1.0491 | val acc: 0.6040
 Training epoch 132
-train loss: 0.8752 | val loss: 1.0763 | val acc: 0.5890
+train loss: 0.8874 | val loss: 1.0628 | val acc: 0.6083
 Training epoch 133
-train loss: 0.8751 | val loss: 1.1096 | val acc: 0.5719
+train loss: 0.8868 | val loss: 1.1231 | val acc: 0.5712
 Training epoch 134
-train loss: 0.8698 | val loss: 1.0534 | val acc: 0.5983
+train loss: 0.8829 | val loss: 1.0563 | val acc: 0.5954
 Training epoch 135
-train loss: 0.8646 | val loss: 1.0671 | val acc: 0.6011
+train loss: 0.8771 | val loss: 1.0672 | val acc: 0.6054
 Training epoch 136
-train loss: 0.8656 | val loss: 1.1848 | val acc: 0.5484
+train loss: 0.8761 | val loss: 1.1443 | val acc: 0.5634
 Training epoch 137
-train loss: 0.8667 | val loss: 1.0532 | val acc: 0.5954
+train loss: 0.8766 | val loss: 1.0594 | val acc: 0.5983
 Training epoch 138
-train loss: 0.8616 | val loss: 1.0560 | val acc: 0.5983
+train loss: 0.8736 | val loss: 1.0692 | val acc: 0.5912
 Training epoch 139
-train loss: 0.8570 | val loss: 1.0568 | val acc: 0.6033
+train loss: 0.8701 | val loss: 1.0475 | val acc: 0.6054
 Training epoch 140
-train loss: 0.8511 | val loss: 1.0520 | val acc: 0.6004
+train loss: 0.8658 | val loss: 1.0567 | val acc: 0.5983
 Training epoch 141
-train loss: 0.8499 | val loss: 1.0720 | val acc: 0.5912
+train loss: 0.8651 | val loss: 1.0829 | val acc: 0.5890
 Training epoch 142
-train loss: 0.8487 | val loss: 1.0862 | val acc: 0.5840
+train loss: 0.8641 | val loss: 1.0898 | val acc: 0.5755
 Training epoch 143
-train loss: 0.8448 | val loss: 1.0688 | val acc: 0.5890
+train loss: 0.8648 | val loss: 1.0600 | val acc: 0.5912
 Training epoch 144
-train loss: 0.8438 | val loss: 1.1033 | val acc: 0.5919
+train loss: 0.8576 | val loss: 1.0916 | val acc: 0.5905
 Training epoch 145
-train loss: 0.8474 | val loss: 1.1033 | val acc: 0.5698
+train loss: 0.8538 | val loss: 1.0791 | val acc: 0.5791
 Training epoch 146
-train loss: 0.8401 | val loss: 1.0788 | val acc: 0.6019
+train loss: 0.8529 | val loss: 1.0776 | val acc: 0.5926
 Training epoch 147
-train loss: 0.8424 | val loss: 1.0480 | val acc: 0.5905
+train loss: 0.8528 | val loss: 1.0849 | val acc: 0.5819
 Training epoch 148
-train loss: 0.8294 | val loss: 1.0414 | val acc: 0.5962
+train loss: 0.8444 | val loss: 1.0372 | val acc: 0.6019
 Training epoch 149
-train loss: 0.8303 | val loss: 1.0695 | val acc: 0.5954
+train loss: 0.8454 | val loss: 1.0504 | val acc: 0.6083
 Training epoch 150
-train loss: 0.8300 | val loss: 1.0650 | val acc: 0.5862
+train loss: 0.8407 | val loss: 1.0465 | val acc: 0.5990
 Training epoch 151
-train loss: 0.8285 | val loss: 1.0688 | val acc: 0.6075
+train loss: 0.8416 | val loss: 1.0764 | val acc: 0.5983
 Training epoch 152
-train loss: 0.8226 | val loss: 1.0641 | val acc: 0.5947
+train loss: 0.8366 | val loss: 1.0613 | val acc: 0.6011
 Training epoch 153
-train loss: 0.8245 | val loss: 1.0431 | val acc: 0.6097
+train loss: 0.8341 | val loss: 1.0954 | val acc: 0.5890
 Training epoch 154
-train loss: 0.8165 | val loss: 1.0636 | val acc: 0.6004
+train loss: 0.8340 | val loss: 1.0809 | val acc: 0.5876
 Training epoch 155
-train loss: 0.8194 | val loss: 1.2233 | val acc: 0.5491
+train loss: 0.8310 | val loss: 1.1734 | val acc: 0.5491
 Training epoch 156
-train loss: 0.8200 | val loss: 1.0435 | val acc: 0.5947
+train loss: 0.8310 | val loss: 1.0516 | val acc: 0.5997
 Training epoch 157
-train loss: 0.8081 | val loss: 1.0893 | val acc: 0.5869
+train loss: 0.8268 | val loss: 1.0926 | val acc: 0.5812
 Training epoch 158
-train loss: 0.8089 | val loss: 1.0760 | val acc: 0.5940
+train loss: 0.8264 | val loss: 1.0699 | val acc: 0.5933
 Training epoch 159
-train loss: 0.8070 | val loss: 1.0475 | val acc: 0.6047
+train loss: 0.8208 | val loss: 1.0411 | val acc: 0.6154
 Training epoch 160
-train loss: 0.8042 | val loss: 1.0439 | val acc: 0.6068
+train loss: 0.8150 | val loss: 1.0354 | val acc: 0.6182
 Training epoch 161
-train loss: 0.7976 | val loss: 1.0627 | val acc: 0.6019
+train loss: 0.8150 | val loss: 1.0697 | val acc: 0.5933
 Training epoch 162
-train loss: 0.7938 | val loss: 1.0631 | val acc: 0.5947
+train loss: 0.8114 | val loss: 1.0585 | val acc: 0.5883
 Training epoch 163
-train loss: 0.8043 | val loss: 1.0861 | val acc: 0.5912
+train loss: 0.8091 | val loss: 1.0676 | val acc: 0.6004
 Training epoch 164
-train loss: 0.7942 | val loss: 1.0402 | val acc: 0.6040
+train loss: 0.8082 | val loss: 1.0414 | val acc: 0.6097
 Training epoch 165
-train loss: 0.7914 | val loss: 1.0473 | val acc: 0.5947
+train loss: 0.8086 | val loss: 1.0340 | val acc: 0.6033
 Training epoch 166
-train loss: 0.7871 | val loss: 1.0908 | val acc: 0.5677
+train loss: 0.8057 | val loss: 1.0751 | val acc: 0.5897
 Training epoch 167
-train loss: 0.7822 | val loss: 1.0875 | val acc: 0.5926
+train loss: 0.7987 | val loss: 1.0838 | val acc: 0.5876
 Training epoch 168
-train loss: 0.7821 | val loss: 1.0931 | val acc: 0.5969
+train loss: 0.7983 | val loss: 1.1004 | val acc: 0.5933
 Training epoch 169
-train loss: 0.7833 | val loss: 1.0565 | val acc: 0.5926
+train loss: 0.7979 | val loss: 1.0782 | val acc: 0.5912
 Training epoch 170
-train loss: 0.7773 | val loss: 1.0541 | val acc: 0.6075
+train loss: 0.7919 | val loss: 1.0415 | val acc: 0.6154
 Training epoch 171
-train loss: 0.7784 | val loss: 1.0371 | val acc: 0.6040
+train loss: 0.7932 | val loss: 1.0345 | val acc: 0.6068
 Training epoch 172
-train loss: 0.7747 | val loss: 1.0442 | val acc: 0.6019
+train loss: 0.7887 | val loss: 1.0230 | val acc: 0.6189
 Training epoch 173
-train loss: 0.7711 | val loss: 1.0680 | val acc: 0.5990
+train loss: 0.7837 | val loss: 1.0474 | val acc: 0.6054
 Training epoch 174
-train loss: 0.7693 | val loss: 1.0542 | val acc: 0.5990
+train loss: 0.7865 | val loss: 1.0457 | val acc: 0.6125
 Training epoch 175
-train loss: 0.7661 | val loss: 1.1230 | val acc: 0.5869
+train loss: 0.7841 | val loss: 1.0617 | val acc: 0.5962
 Training epoch 176
-train loss: 0.7649 | val loss: 1.0661 | val acc: 0.5990
+train loss: 0.7753 | val loss: 1.0728 | val acc: 0.6068
 Training epoch 177
-train loss: 0.7615 | val loss: 1.0355 | val acc: 0.6083
+train loss: 0.7742 | val loss: 1.0160 | val acc: 0.6261
 Training epoch 178
-train loss: 0.7582 | val loss: 1.0835 | val acc: 0.5855
+train loss: 0.7749 | val loss: 1.0887 | val acc: 0.5862
 Training epoch 179
-train loss: 0.7611 | val loss: 1.0328 | val acc: 0.6004
+train loss: 0.7757 | val loss: 1.0226 | val acc: 0.6132
 Training epoch 180
-train loss: 0.7514 | val loss: 1.0860 | val acc: 0.5962
+train loss: 0.7689 | val loss: 1.0903 | val acc: 0.6011
 Training epoch 181
-train loss: 0.7513 | val loss: 1.0761 | val acc: 0.6118
+train loss: 0.7649 | val loss: 1.0785 | val acc: 0.6019
 Training epoch 182
-train loss: 0.7523 | val loss: 1.0865 | val acc: 0.5748
+train loss: 0.7661 | val loss: 1.1091 | val acc: 0.5698
 Training epoch 183
-train loss: 0.7455 | val loss: 1.0692 | val acc: 0.5862
+train loss: 0.7622 | val loss: 1.0626 | val acc: 0.5933
 Training epoch 184
-train loss: 0.7436 | val loss: 1.0456 | val acc: 0.6097
+train loss: 0.7588 | val loss: 1.0752 | val acc: 0.5933
 Training epoch 185
-train loss: 0.7466 | val loss: 1.0588 | val acc: 0.6004
+train loss: 0.7582 | val loss: 1.0618 | val acc: 0.5962
 Training epoch 186
-train loss: 0.7362 | val loss: 1.0375 | val acc: 0.6097
+train loss: 0.7518 | val loss: 1.0388 | val acc: 0.6118
 Training epoch 187
-train loss: 0.7408 | val loss: 1.0322 | val acc: 0.6090
+train loss: 0.7538 | val loss: 1.0271 | val acc: 0.6147
 Training epoch 188
-train loss: 0.7359 | val loss: 1.0260 | val acc: 0.6068
+train loss: 0.7477 | val loss: 1.0241 | val acc: 0.6118
 Training epoch 189
-train loss: 0.7366 | val loss: 1.0242 | val acc: 0.6090
+train loss: 0.7478 | val loss: 1.0082 | val acc: 0.6132
 Training epoch 190
-train loss: 0.7333 | val loss: 1.0391 | val acc: 0.6104
+train loss: 0.7459 | val loss: 1.0083 | val acc: 0.6211
 Training epoch 191
-train loss: 0.7279 | val loss: 1.0334 | val acc: 0.6132
+train loss: 0.7436 | val loss: 1.0297 | val acc: 0.6168
 Training epoch 192
-train loss: 0.7312 | val loss: 1.0930 | val acc: 0.5869
+train loss: 0.7402 | val loss: 1.1386 | val acc: 0.5705
 Training epoch 193
-train loss: 0.7218 | val loss: 1.0777 | val acc: 0.5990
+train loss: 0.7361 | val loss: 1.0428 | val acc: 0.6111
 Training epoch 194
-train loss: 0.7197 | val loss: 1.0324 | val acc: 0.6047
+train loss: 0.7344 | val loss: 1.0320 | val acc: 0.6254
 Training epoch 195
-train loss: 0.7198 | val loss: 1.1835 | val acc: 0.5734
+train loss: 0.7325 | val loss: 1.0681 | val acc: 0.6104
 Training epoch 196
-train loss: 0.7201 | val loss: 1.0311 | val acc: 0.6182
+train loss: 0.7319 | val loss: 1.0335 | val acc: 0.6189
 Training epoch 197
-train loss: 0.7112 | val loss: 1.0795 | val acc: 0.5976
+train loss: 0.7260 | val loss: 1.1880 | val acc: 0.5342
 Training epoch 198
-train loss: 0.7131 | val loss: 1.0757 | val acc: 0.6047
+train loss: 0.7278 | val loss: 1.0503 | val acc: 0.6097
 Training epoch 199
-train loss: 0.7037 | val loss: 1.2076 | val acc: 0.5499
+train loss: 0.7256 | val loss: 1.1721 | val acc: 0.5484
 Training epoch 200
-train loss: 0.7085 | val loss: 1.1045 | val acc: 0.5848
-Training took 3 minutes and 12 seconds
-Final test acc: 0.5863
+train loss: 0.7212 | val loss: 1.0961 | val acc: 0.5862
+Training took 2 minutes and 46 seconds
+Final test acc: 0.5833
 
 
 
 (IST_DL21_Env) kiko@kiko-VivoBook-ASUSLaptop-X421EQ-S433EQ:~/repos/AP/ap-homeworks$ python hw1-q2.py mlp -momentum 0.9
-initial val acc: 0.1766
+initial val acc: 0.1645
 Training epoch 1
-train loss: 1.6160 | val loss: 1.4396 | val acc: 0.4338
+train loss: 1.5954 | val loss: 1.4132 | val acc: 0.4437
 Training epoch 2
-train loss: 1.3614 | val loss: 1.3220 | val acc: 0.4765
+train loss: 1.3473 | val loss: 1.3192 | val acc: 0.4793
 Training epoch 3
-train loss: 1.2780 | val loss: 1.2838 | val acc: 0.4886
+train loss: 1.2720 | val loss: 1.2763 | val acc: 0.4893
 Training epoch 4
-train loss: 1.2271 | val loss: 1.2415 | val acc: 0.5356
+train loss: 1.2247 | val loss: 1.2201 | val acc: 0.5399
 Training epoch 5
-train loss: 1.1967 | val loss: 1.1860 | val acc: 0.5420
+train loss: 1.1958 | val loss: 1.1928 | val acc: 0.5385
 Training epoch 6
-train loss: 1.1565 | val loss: 1.2148 | val acc: 0.5121
+train loss: 1.1606 | val loss: 1.2346 | val acc: 0.5107
 Training epoch 7
-train loss: 1.1219 | val loss: 1.2108 | val acc: 0.5370
+train loss: 1.1344 | val loss: 1.2325 | val acc: 0.5313
 Training epoch 8
-train loss: 1.1038 | val loss: 1.1241 | val acc: 0.5791
+train loss: 1.1152 | val loss: 1.1355 | val acc: 0.5705
 Training epoch 9
-train loss: 1.0802 | val loss: 1.1207 | val acc: 0.5791
+train loss: 1.0879 | val loss: 1.1312 | val acc: 0.5662
 Training epoch 10
-train loss: 1.0718 | val loss: 1.0926 | val acc: 0.5833
+train loss: 1.0758 | val loss: 1.1079 | val acc: 0.5783
 Training epoch 11
-train loss: 1.0434 | val loss: 1.0966 | val acc: 0.5862
+train loss: 1.0522 | val loss: 1.1068 | val acc: 0.5769
 Training epoch 12
-train loss: 1.0285 | val loss: 1.0841 | val acc: 0.5862
+train loss: 1.0336 | val loss: 1.0887 | val acc: 0.5840
 Training epoch 13
-train loss: 1.0203 | val loss: 1.0841 | val acc: 0.5826
+train loss: 1.0323 | val loss: 1.0956 | val acc: 0.5826
 Training epoch 14
-train loss: 1.0004 | val loss: 1.1978 | val acc: 0.5484
+train loss: 1.0107 | val loss: 1.1925 | val acc: 0.5477
 Training epoch 15
-train loss: 1.0106 | val loss: 1.1402 | val acc: 0.5691
+train loss: 1.0189 | val loss: 1.1360 | val acc: 0.5677
 Training epoch 16
-train loss: 0.9860 | val loss: 1.0688 | val acc: 0.5905
+train loss: 0.9930 | val loss: 1.0750 | val acc: 0.5826
 Training epoch 17
-train loss: 0.9758 | val loss: 1.0735 | val acc: 0.5912
+train loss: 0.9796 | val loss: 1.0761 | val acc: 0.5890
 Training epoch 18
-train loss: 0.9604 | val loss: 1.0785 | val acc: 0.5783
+train loss: 0.9628 | val loss: 1.0712 | val acc: 0.5812
 Training epoch 19
-train loss: 0.9490 | val loss: 1.0838 | val acc: 0.5890
+train loss: 0.9536 | val loss: 1.0730 | val acc: 0.5912
 Training epoch 20
-train loss: 0.9335 | val loss: 1.0918 | val acc: 0.5798
+train loss: 0.9480 | val loss: 1.0783 | val acc: 0.5684
 Training epoch 21
-train loss: 0.9214 | val loss: 1.0749 | val acc: 0.5840
+train loss: 0.9334 | val loss: 1.0632 | val acc: 0.5905
 Training epoch 22
-train loss: 0.9135 | val loss: 1.0465 | val acc: 0.6075
+train loss: 0.9330 | val loss: 1.0684 | val acc: 0.5947
 Training epoch 23
-train loss: 0.9048 | val loss: 1.0705 | val acc: 0.5919
+train loss: 0.9164 | val loss: 1.0470 | val acc: 0.5976
 Training epoch 24
-train loss: 0.8963 | val loss: 1.0407 | val acc: 0.5976
+train loss: 0.9072 | val loss: 1.0435 | val acc: 0.5947
 Training epoch 25
-train loss: 0.8822 | val loss: 1.0550 | val acc: 0.5997
+train loss: 0.8973 | val loss: 1.0617 | val acc: 0.5890
 Training epoch 26
-train loss: 0.8640 | val loss: 1.0395 | val acc: 0.6047
+train loss: 0.8733 | val loss: 1.0574 | val acc: 0.6011
 Training epoch 27
-train loss: 0.8606 | val loss: 1.0793 | val acc: 0.5926
+train loss: 0.8676 | val loss: 1.0477 | val acc: 0.6054
 Training epoch 28
-train loss: 0.8521 | val loss: 1.0084 | val acc: 0.6239
+train loss: 0.8594 | val loss: 1.0104 | val acc: 0.6189
 Training epoch 29
-train loss: 0.8359 | val loss: 1.0898 | val acc: 0.5912
+train loss: 0.8448 | val loss: 1.1063 | val acc: 0.5662
 Training epoch 30
-train loss: 0.8276 | val loss: 1.0357 | val acc: 0.6097
+train loss: 0.8460 | val loss: 1.0422 | val acc: 0.6097
 Training epoch 31
-train loss: 0.8115 | val loss: 1.0180 | val acc: 0.6040
+train loss: 0.8297 | val loss: 1.0619 | val acc: 0.6061
 Training epoch 32
-train loss: 0.8061 | val loss: 1.0259 | val acc: 0.6168
+train loss: 0.8258 | val loss: 1.0130 | val acc: 0.6147
 Training epoch 33
-train loss: 0.7951 | val loss: 1.0860 | val acc: 0.5869
+train loss: 0.8068 | val loss: 1.0385 | val acc: 0.6061
 Training epoch 34
-train loss: 0.8010 | val loss: 1.0052 | val acc: 0.6111
+train loss: 0.8077 | val loss: 1.0295 | val acc: 0.5997
 Training epoch 35
-train loss: 0.7801 | val loss: 1.0304 | val acc: 0.5876
+train loss: 0.8033 | val loss: 1.0056 | val acc: 0.6140
 Training epoch 36
-train loss: 0.7663 | val loss: 1.0479 | val acc: 0.6118
+train loss: 0.7833 | val loss: 1.0543 | val acc: 0.6083
 Training epoch 37
-train loss: 0.7607 | val loss: 1.0376 | val acc: 0.6189
+train loss: 0.7737 | val loss: 1.0677 | val acc: 0.5997
 Training epoch 38
-train loss: 0.7369 | val loss: 1.1235 | val acc: 0.5926
+train loss: 0.7437 | val loss: 1.1008 | val acc: 0.5840
 Training epoch 39
-train loss: 0.7409 | val loss: 1.0425 | val acc: 0.6182
+train loss: 0.7548 | val loss: 1.0281 | val acc: 0.6132
 Training epoch 40
-train loss: 0.7207 | val loss: 1.0979 | val acc: 0.6140
+train loss: 0.7525 | val loss: 1.0303 | val acc: 0.6182
 Training epoch 41
-train loss: 0.7243 | val loss: 1.0424 | val acc: 0.6211
+train loss: 0.7318 | val loss: 1.0246 | val acc: 0.6118
 Training epoch 42
-train loss: 0.7024 | val loss: 1.0464 | val acc: 0.6047
+train loss: 0.7096 | val loss: 1.0661 | val acc: 0.5969
 Training epoch 43
-train loss: 0.6970 | val loss: 1.0644 | val acc: 0.6111
+train loss: 0.7083 | val loss: 1.0518 | val acc: 0.6147
 Training epoch 44
-train loss: 0.6902 | val loss: 1.0220 | val acc: 0.6189
+train loss: 0.7040 | val loss: 1.0482 | val acc: 0.6090
 Training epoch 45
-train loss: 0.6685 | val loss: 1.1156 | val acc: 0.6040
+train loss: 0.6876 | val loss: 1.0453 | val acc: 0.6161
 Training epoch 46
-train loss: 0.6908 | val loss: 1.0978 | val acc: 0.5997
+train loss: 0.7075 | val loss: 1.0963 | val acc: 0.6011
 Training epoch 47
-train loss: 0.6613 | val loss: 1.0639 | val acc: 0.6083
+train loss: 0.6880 | val loss: 1.1105 | val acc: 0.5990
 Training epoch 48
-train loss: 0.6552 | val loss: 1.0426 | val acc: 0.6168
+train loss: 0.6789 | val loss: 1.0413 | val acc: 0.6083
 Training epoch 49
-train loss: 0.6294 | val loss: 1.0592 | val acc: 0.6154
+train loss: 0.6543 | val loss: 1.0881 | val acc: 0.6040
 Training epoch 50
-train loss: 0.6318 | val loss: 1.1008 | val acc: 0.6118
+train loss: 0.6353 | val loss: 1.0456 | val acc: 0.6332
 Training epoch 51
-train loss: 0.6193 | val loss: 1.0451 | val acc: 0.6268
+train loss: 0.6349 | val loss: 1.0415 | val acc: 0.6239
 Training epoch 52
-train loss: 0.6258 | val loss: 1.1452 | val acc: 0.6154
+train loss: 0.6354 | val loss: 1.0759 | val acc: 0.6189
 Training epoch 53
-train loss: 0.6072 | val loss: 1.0793 | val acc: 0.6182
+train loss: 0.6215 | val loss: 1.1062 | val acc: 0.6204
 Training epoch 54
-train loss: 0.5922 | val loss: 1.0897 | val acc: 0.6246
+train loss: 0.6038 | val loss: 1.0875 | val acc: 0.6211
 Training epoch 55
-train loss: 0.5739 | val loss: 1.0723 | val acc: 0.6140
+train loss: 0.5805 | val loss: 1.0790 | val acc: 0.6204
 Training epoch 56
-train loss: 0.5856 | val loss: 1.0751 | val acc: 0.6268
+train loss: 0.5982 | val loss: 1.0726 | val acc: 0.6204
 Training epoch 57
-train loss: 0.5705 | val loss: 1.1027 | val acc: 0.6218
+train loss: 0.5711 | val loss: 1.1271 | val acc: 0.6104
 Training epoch 58
-train loss: 0.5452 | val loss: 1.1618 | val acc: 0.6182
+train loss: 0.5787 | val loss: 1.1311 | val acc: 0.6140
 Training epoch 59
-train loss: 0.5386 | val loss: 1.1655 | val acc: 0.6111
+train loss: 0.5480 | val loss: 1.1202 | val acc: 0.6161
 Training epoch 60
-train loss: 0.5472 | val loss: 1.1198 | val acc: 0.6197
+train loss: 0.5697 | val loss: 1.1458 | val acc: 0.6083
 Training epoch 61
-train loss: 0.5282 | val loss: 1.1196 | val acc: 0.6261
+train loss: 0.5711 | val loss: 1.0916 | val acc: 0.6268
 Training epoch 62
-train loss: 0.5039 | val loss: 1.1781 | val acc: 0.6154
+train loss: 0.5344 | val loss: 1.2879 | val acc: 0.6004
 Training epoch 63
-train loss: 0.5177 | val loss: 1.1184 | val acc: 0.6254
+train loss: 0.5396 | val loss: 1.1788 | val acc: 0.6104
 Training epoch 64
-train loss: 0.5030 | val loss: 1.1402 | val acc: 0.6033
+train loss: 0.5222 | val loss: 1.1419 | val acc: 0.6161
 Training epoch 65
-train loss: 0.5084 | val loss: 1.1320 | val acc: 0.6189
+train loss: 0.5224 | val loss: 1.1534 | val acc: 0.6232
 Training epoch 66
-train loss: 0.4931 | val loss: 1.1578 | val acc: 0.6075
+train loss: 0.5100 | val loss: 1.1728 | val acc: 0.6175
 Training epoch 67
-train loss: 0.4922 | val loss: 1.2654 | val acc: 0.6111
+train loss: 0.5131 | val loss: 1.2481 | val acc: 0.6083
 Training epoch 68
-train loss: 0.4766 | val loss: 1.1804 | val acc: 0.6339
+train loss: 0.4827 | val loss: 1.1828 | val acc: 0.6118
 Training epoch 69
-train loss: 0.4534 | val loss: 1.1964 | val acc: 0.6118
+train loss: 0.4754 | val loss: 1.1702 | val acc: 0.6318
 Training epoch 70
-train loss: 0.4720 | val loss: 1.2758 | val acc: 0.6232
+train loss: 0.4926 | val loss: 1.2953 | val acc: 0.6083
 Training epoch 71
-train loss: 0.4756 | val loss: 1.2416 | val acc: 0.6140
+train loss: 0.4640 | val loss: 1.2025 | val acc: 0.6040
 Training epoch 72
-train loss: 0.4527 | val loss: 1.2440 | val acc: 0.5962
+train loss: 0.4754 | val loss: 1.2625 | val acc: 0.6161
 Training epoch 73
-train loss: 0.4447 | val loss: 1.2217 | val acc: 0.6225
+train loss: 0.4590 | val loss: 1.3179 | val acc: 0.6054
 Training epoch 74
-train loss: 0.4415 | val loss: 1.2894 | val acc: 0.6147
+train loss: 0.4953 | val loss: 1.1588 | val acc: 0.6261
 Training epoch 75
-train loss: 0.4393 | val loss: 1.2280 | val acc: 0.6360
+train loss: 0.4345 | val loss: 1.3021 | val acc: 0.6075
 Training epoch 76
-train loss: 0.4249 | val loss: 1.3665 | val acc: 0.5947
+train loss: 0.4307 | val loss: 1.3693 | val acc: 0.6040
 Training epoch 77
-train loss: 0.3987 | val loss: 1.3079 | val acc: 0.6033
+train loss: 0.4327 | val loss: 1.2323 | val acc: 0.6275
 Training epoch 78
-train loss: 0.4110 | val loss: 1.2666 | val acc: 0.6282
+train loss: 0.4139 | val loss: 1.2624 | val acc: 0.6239
 Training epoch 79
-train loss: 0.4083 | val loss: 1.3110 | val acc: 0.6189
+train loss: 0.4280 | val loss: 1.3965 | val acc: 0.6097
 Training epoch 80
-train loss: 0.3970 | val loss: 1.2604 | val acc: 0.6182
+train loss: 0.4196 | val loss: 1.3066 | val acc: 0.6111
 Training epoch 81
-train loss: 0.3827 | val loss: 1.3613 | val acc: 0.6204
+train loss: 0.4095 | val loss: 1.2240 | val acc: 0.6360
 Training epoch 82
-train loss: 0.3975 | val loss: 1.4073 | val acc: 0.6204
+train loss: 0.3937 | val loss: 1.3768 | val acc: 0.6211
 Training epoch 83
-train loss: 0.3975 | val loss: 1.4094 | val acc: 0.6125
+train loss: 0.4009 | val loss: 1.2749 | val acc: 0.6318
 Training epoch 84
-train loss: 0.3578 | val loss: 1.3019 | val acc: 0.6239
+train loss: 0.3852 | val loss: 1.2892 | val acc: 0.5997
 Training epoch 85
-train loss: 0.3998 | val loss: 1.3375 | val acc: 0.5926
+train loss: 0.3771 | val loss: 1.3998 | val acc: 0.5954
 Training epoch 86
-train loss: 0.3745 | val loss: 1.3302 | val acc: 0.6054
+train loss: 0.3979 | val loss: 1.3501 | val acc: 0.5997
 Training epoch 87
-train loss: 0.3797 | val loss: 1.3506 | val acc: 0.6204
+train loss: 0.3901 | val loss: 1.3175 | val acc: 0.6182
 Training epoch 88
-train loss: 0.3676 | val loss: 1.5210 | val acc: 0.6026
+train loss: 0.3610 | val loss: 1.3635 | val acc: 0.6268
 Training epoch 89
-train loss: 0.3321 | val loss: 1.5056 | val acc: 0.5983
+train loss: 0.3514 | val loss: 1.4691 | val acc: 0.6068
 Training epoch 90
-train loss: 0.3390 | val loss: 1.4134 | val acc: 0.6225
+train loss: 0.3545 | val loss: 1.4186 | val acc: 0.6175
 Training epoch 91
-train loss: 0.3269 | val loss: 1.3544 | val acc: 0.6197
+train loss: 0.3521 | val loss: 1.4091 | val acc: 0.6090
 Training epoch 92
-train loss: 0.3351 | val loss: 1.4498 | val acc: 0.6168
+train loss: 0.3481 | val loss: 1.4252 | val acc: 0.5862
 Training epoch 93
-train loss: 0.3235 | val loss: 1.3897 | val acc: 0.6189
+train loss: 0.3694 | val loss: 1.4632 | val acc: 0.6132
 Training epoch 94
-train loss: 0.2988 | val loss: 1.4538 | val acc: 0.6104
+train loss: 0.3341 | val loss: 1.3855 | val acc: 0.6211
 Training epoch 95
-train loss: 0.3058 | val loss: 1.4374 | val acc: 0.6019
+train loss: 0.3405 | val loss: 1.4962 | val acc: 0.6225
 Training epoch 96
-train loss: 0.3122 | val loss: 1.4897 | val acc: 0.6083
+train loss: 0.3304 | val loss: 1.4441 | val acc: 0.6268
 Training epoch 97
-train loss: 0.3207 | val loss: 1.4285 | val acc: 0.6147
+train loss: 0.3331 | val loss: 1.4883 | val acc: 0.5897
 Training epoch 98
-train loss: 0.3075 | val loss: 1.5936 | val acc: 0.6033
+train loss: 0.3218 | val loss: 1.5643 | val acc: 0.6083
 Training epoch 99
-train loss: 0.2982 | val loss: 1.6113 | val acc: 0.6011
+train loss: 0.2929 | val loss: 1.5271 | val acc: 0.6168
 Training epoch 100
-train loss: 0.2961 | val loss: 1.5657 | val acc: 0.5976
+train loss: 0.3251 | val loss: 1.4850 | val acc: 0.6197
 Training epoch 101
-train loss: 0.3069 | val loss: 1.6794 | val acc: 0.6118
+train loss: 0.3130 | val loss: 1.5329 | val acc: 0.6168
 Training epoch 102
-train loss: 0.3027 | val loss: 1.5414 | val acc: 0.6033
+train loss: 0.2755 | val loss: 1.4532 | val acc: 0.6040
 Training epoch 103
-train loss: 0.2868 | val loss: 1.4800 | val acc: 0.6104
+train loss: 0.2928 | val loss: 1.5325 | val acc: 0.6161
 Training epoch 104
-train loss: 0.2838 | val loss: 1.6073 | val acc: 0.6004
+train loss: 0.3123 | val loss: 1.5954 | val acc: 0.6047
 Training epoch 105
-train loss: 0.2914 | val loss: 1.4879 | val acc: 0.6054
+train loss: 0.2641 | val loss: 1.5677 | val acc: 0.6033
 Training epoch 106
-train loss: 0.2943 | val loss: 1.6528 | val acc: 0.6147
+train loss: 0.2847 | val loss: 1.6267 | val acc: 0.6254
 Training epoch 107
-train loss: 0.2740 | val loss: 1.5123 | val acc: 0.6246
+train loss: 0.2953 | val loss: 1.5586 | val acc: 0.6097
 Training epoch 108
-train loss: 0.2691 | val loss: 1.5771 | val acc: 0.6097
+train loss: 0.2878 | val loss: 1.6461 | val acc: 0.6040
 Training epoch 109
-train loss: 0.2415 | val loss: 1.5504 | val acc: 0.6154
+train loss: 0.2490 | val loss: 1.8250 | val acc: 0.5840
 Training epoch 110
-train loss: 0.2617 | val loss: 1.5672 | val acc: 0.6132
+train loss: 0.2788 | val loss: 1.6529 | val acc: 0.6040
 Training epoch 111
-train loss: 0.2740 | val loss: 1.6689 | val acc: 0.5805
+train loss: 0.2539 | val loss: 1.6757 | val acc: 0.6004
 Training epoch 112
-train loss: 0.2698 | val loss: 1.7368 | val acc: 0.5855
+train loss: 0.2514 | val loss: 1.5575 | val acc: 0.6161
 Training epoch 113
-train loss: 0.2504 | val loss: 1.7788 | val acc: 0.6026
+train loss: 0.2565 | val loss: 1.6195 | val acc: 0.6090
 Training epoch 114
-train loss: 0.2640 | val loss: 1.6607 | val acc: 0.6125
+train loss: 0.2394 | val loss: 1.6946 | val acc: 0.6061
 Training epoch 115
-train loss: 0.2313 | val loss: 1.6637 | val acc: 0.6154
+train loss: 0.2552 | val loss: 1.6460 | val acc: 0.6104
 Training epoch 116
-train loss: 0.2383 | val loss: 1.6775 | val acc: 0.6261
+train loss: 0.2498 | val loss: 1.6559 | val acc: 0.6296
 Training epoch 117
-train loss: 0.2463 | val loss: 1.6406 | val acc: 0.6175
+train loss: 0.2353 | val loss: 1.6834 | val acc: 0.6083
 Training epoch 118
-train loss: 0.2509 | val loss: 1.5923 | val acc: 0.6204
+train loss: 0.2715 | val loss: 1.7420 | val acc: 0.6175
 Training epoch 119
-train loss: 0.2160 | val loss: 1.6906 | val acc: 0.6375
+train loss: 0.2396 | val loss: 1.6296 | val acc: 0.6147
 Training epoch 120
-train loss: 0.2269 | val loss: 1.7924 | val acc: 0.6054
+train loss: 0.2045 | val loss: 1.7180 | val acc: 0.6147
 Training epoch 121
-train loss: 0.2105 | val loss: 1.6606 | val acc: 0.6075
+train loss: 0.2338 | val loss: 1.6483 | val acc: 0.6154
 Training epoch 122
-train loss: 0.2098 | val loss: 1.7722 | val acc: 0.6104
+train loss: 0.2089 | val loss: 1.6972 | val acc: 0.6268
 Training epoch 123
-train loss: 0.2371 | val loss: 1.6851 | val acc: 0.5983
+train loss: 0.2192 | val loss: 1.7339 | val acc: 0.6189
 Training epoch 124
-train loss: 0.2183 | val loss: 1.8050 | val acc: 0.6097
+train loss: 0.2188 | val loss: 1.7642 | val acc: 0.6054
 Training epoch 125
-train loss: 0.1968 | val loss: 1.6799 | val acc: 0.6239
+train loss: 0.2383 | val loss: 1.7393 | val acc: 0.6104
 Training epoch 126
-train loss: 0.2073 | val loss: 1.6830 | val acc: 0.6147
+train loss: 0.2140 | val loss: 1.6207 | val acc: 0.6289
 Training epoch 127
-train loss: 0.2248 | val loss: 1.6987 | val acc: 0.6325
+train loss: 0.1996 | val loss: 1.7790 | val acc: 0.6189
 Training epoch 128
-train loss: 0.1846 | val loss: 1.7134 | val acc: 0.6325
+train loss: 0.2194 | val loss: 1.8089 | val acc: 0.6246
 Training epoch 129
-train loss: 0.2012 | val loss: 1.7166 | val acc: 0.6132
+train loss: 0.1956 | val loss: 1.8484 | val acc: 0.6161
 Training epoch 130
-train loss: 0.1650 | val loss: 1.8781 | val acc: 0.6154
+train loss: 0.1879 | val loss: 1.8179 | val acc: 0.6111
 Training epoch 131
-train loss: 0.1899 | val loss: 1.7919 | val acc: 0.5940
+train loss: 0.2010 | val loss: 1.7621 | val acc: 0.6168
 Training epoch 132
-train loss: 0.2403 | val loss: 1.8932 | val acc: 0.5990
+train loss: 0.2453 | val loss: 1.7403 | val acc: 0.6047
 Training epoch 133
-train loss: 0.1898 | val loss: 1.8454 | val acc: 0.5969
+train loss: 0.2089 | val loss: 1.6940 | val acc: 0.6090
 Training epoch 134
-train loss: 0.1590 | val loss: 1.8466 | val acc: 0.6104
+train loss: 0.1680 | val loss: 1.8844 | val acc: 0.6068
 Training epoch 135
-train loss: 0.1722 | val loss: 1.9203 | val acc: 0.6118
+train loss: 0.1834 | val loss: 1.8145 | val acc: 0.6211
 Training epoch 136
-train loss: 0.1892 | val loss: 1.9402 | val acc: 0.6189
+train loss: 0.1880 | val loss: 1.8898 | val acc: 0.6111
 Training epoch 137
-train loss: 0.2115 | val loss: 1.8084 | val acc: 0.6289
+train loss: 0.1859 | val loss: 1.9677 | val acc: 0.6054
 Training epoch 138
-train loss: 0.1671 | val loss: 1.9872 | val acc: 0.6218
+train loss: 0.1819 | val loss: 1.8905 | val acc: 0.6097
 Training epoch 139
-train loss: 0.1632 | val loss: 1.9371 | val acc: 0.6154
+train loss: 0.1864 | val loss: 1.9673 | val acc: 0.6161
 Training epoch 140
-train loss: 0.1745 | val loss: 1.8198 | val acc: 0.6225
+train loss: 0.1575 | val loss: 1.8374 | val acc: 0.6254
 Training epoch 141
-train loss: 0.1749 | val loss: 1.9541 | val acc: 0.6197
+train loss: 0.1567 | val loss: 1.9423 | val acc: 0.6275
 Training epoch 142
-train loss: 0.1412 | val loss: 1.8651 | val acc: 0.6118
+train loss: 0.1764 | val loss: 1.9487 | val acc: 0.6182
 Training epoch 143
-train loss: 0.1612 | val loss: 1.8122 | val acc: 0.6375
+train loss: 0.1604 | val loss: 2.0203 | val acc: 0.5940
 Training epoch 144
-train loss: 0.1528 | val loss: 1.8714 | val acc: 0.6154
+train loss: 0.1586 | val loss: 1.8865 | val acc: 0.6161
 Training epoch 145
-train loss: 0.1467 | val loss: 1.9018 | val acc: 0.6204
+train loss: 0.1993 | val loss: 1.8841 | val acc: 0.6261
 Training epoch 146
-train loss: 0.1599 | val loss: 1.9590 | val acc: 0.6282
+train loss: 0.1618 | val loss: 1.9603 | val acc: 0.6218
 Training epoch 147
-train loss: 0.1445 | val loss: 1.9345 | val acc: 0.6204
+train loss: 0.1437 | val loss: 1.8783 | val acc: 0.6168
 Training epoch 148
-train loss: 0.1309 | val loss: 1.9561 | val acc: 0.6218
+train loss: 0.1680 | val loss: 2.0328 | val acc: 0.6090
 Training epoch 149
-train loss: 0.1465 | val loss: 1.8981 | val acc: 0.6296
+train loss: 0.1762 | val loss: 1.8844 | val acc: 0.6218
 Training epoch 150
-train loss: 0.1565 | val loss: 1.9697 | val acc: 0.6197
+train loss: 0.1698 | val loss: 1.9391 | val acc: 0.6083
 Training epoch 151
-train loss: 0.1422 | val loss: 1.9309 | val acc: 0.6232
+train loss: 0.1574 | val loss: 1.8868 | val acc: 0.6254
 Training epoch 152
-train loss: 0.1422 | val loss: 2.0792 | val acc: 0.6296
+train loss: 0.1415 | val loss: 2.0177 | val acc: 0.6168
 Training epoch 153
-train loss: 0.1538 | val loss: 2.0937 | val acc: 0.5983
+train loss: 0.1458 | val loss: 2.0449 | val acc: 0.6189
 Training epoch 154
-train loss: 0.1540 | val loss: 2.1661 | val acc: 0.6104
+train loss: 0.1554 | val loss: 1.9156 | val acc: 0.6197
 Training epoch 155
-train loss: 0.1165 | val loss: 1.9930 | val acc: 0.6182
+train loss: 0.1482 | val loss: 2.0640 | val acc: 0.6211
 Training epoch 156
-train loss: 0.1326 | val loss: 1.9348 | val acc: 0.6225
+train loss: 0.1632 | val loss: 2.1214 | val acc: 0.5983
 Training epoch 157
-train loss: 0.1102 | val loss: 2.1417 | val acc: 0.6111
+train loss: 0.1338 | val loss: 2.2151 | val acc: 0.6161
 Training epoch 158
-train loss: 0.1130 | val loss: 2.2037 | val acc: 0.5905
+train loss: 0.1611 | val loss: 2.0353 | val acc: 0.6197
 Training epoch 159
-train loss: 0.1549 | val loss: 1.9681 | val acc: 0.6339
+train loss: 0.1476 | val loss: 1.9513 | val acc: 0.6311
 Training epoch 160
-train loss: 0.1250 | val loss: 1.9952 | val acc: 0.6254
+train loss: 0.1486 | val loss: 2.2568 | val acc: 0.5976
 Training epoch 161
-train loss: 0.1408 | val loss: 2.2449 | val acc: 0.6026
+train loss: 0.1620 | val loss: 2.0612 | val acc: 0.6261
 Training epoch 162
-train loss: 0.1281 | val loss: 2.1089 | val acc: 0.5926
+train loss: 0.1264 | val loss: 2.1167 | val acc: 0.6211
 Training epoch 163
-train loss: 0.1249 | val loss: 2.1891 | val acc: 0.5969
+train loss: 0.1213 | val loss: 2.0558 | val acc: 0.6246
 Training epoch 164
-train loss: 0.1138 | val loss: 2.1878 | val acc: 0.6225
+train loss: 0.1341 | val loss: 2.2143 | val acc: 0.6239
 Training epoch 165
-train loss: 0.1300 | val loss: 2.1022 | val acc: 0.6104
+train loss: 0.1123 | val loss: 2.1947 | val acc: 0.6204
 Training epoch 166
-train loss: 0.1143 | val loss: 2.0879 | val acc: 0.6311
+train loss: 0.1615 | val loss: 2.0655 | val acc: 0.6275
 Training epoch 167
-train loss: 0.1119 | val loss: 2.1732 | val acc: 0.6218
+train loss: 0.1138 | val loss: 2.2604 | val acc: 0.5976
 Training epoch 168
-train loss: 0.1227 | val loss: 2.1835 | val acc: 0.5912
+train loss: 0.1577 | val loss: 2.0016 | val acc: 0.6211
 Training epoch 169
-train loss: 0.1098 | val loss: 2.2704 | val acc: 0.6197
+train loss: 0.1285 | val loss: 2.1524 | val acc: 0.6289
 Training epoch 170
-train loss: 0.1130 | val loss: 2.1998 | val acc: 0.6311
+train loss: 0.1244 | val loss: 2.2685 | val acc: 0.6047
 Training epoch 171
-train loss: 0.1117 | val loss: 2.2117 | val acc: 0.6268
+train loss: 0.1247 | val loss: 2.1983 | val acc: 0.6232
 Training epoch 172
-train loss: 0.1112 | val loss: 2.0307 | val acc: 0.6140
+train loss: 0.1020 | val loss: 2.1783 | val acc: 0.6204
 Training epoch 173
-train loss: 0.1563 | val loss: 2.3281 | val acc: 0.6026
+train loss: 0.0987 | val loss: 2.1053 | val acc: 0.6332
 Training epoch 174
-train loss: 0.1039 | val loss: 2.1508 | val acc: 0.6118
+train loss: 0.0907 | val loss: 2.3518 | val acc: 0.5997
 Training epoch 175
-train loss: 0.0971 | val loss: 2.3031 | val acc: 0.6168
+train loss: 0.1071 | val loss: 2.2234 | val acc: 0.6211
 Training epoch 176
-train loss: 0.1015 | val loss: 2.3628 | val acc: 0.6075
+train loss: 0.1119 | val loss: 2.7203 | val acc: 0.5819
 Training epoch 177
-train loss: 0.1359 | val loss: 2.1476 | val acc: 0.6282
+train loss: 0.0979 | val loss: 2.2060 | val acc: 0.6261
 Training epoch 178
-train loss: 0.1086 | val loss: 2.2525 | val acc: 0.6311
+train loss: 0.1087 | val loss: 2.3223 | val acc: 0.6232
 Training epoch 179
-train loss: 0.1030 | val loss: 2.1493 | val acc: 0.6353
+train loss: 0.1316 | val loss: 2.2969 | val acc: 0.6083
 Training epoch 180
-train loss: 0.1008 | val loss: 2.3420 | val acc: 0.5969
+train loss: 0.1200 | val loss: 2.2509 | val acc: 0.6075
 Training epoch 181
-train loss: 0.1104 | val loss: 2.2973 | val acc: 0.6026
+train loss: 0.0971 | val loss: 2.2912 | val acc: 0.6296
 Training epoch 182
-train loss: 0.0930 | val loss: 2.1570 | val acc: 0.6225
+train loss: 0.0924 | val loss: 2.2774 | val acc: 0.6104
 Training epoch 183
-train loss: 0.1104 | val loss: 2.1901 | val acc: 0.6111
+train loss: 0.0940 | val loss: 2.2516 | val acc: 0.6182
 Training epoch 184
-train loss: 0.0974 | val loss: 2.1541 | val acc: 0.6211
+train loss: 0.0869 | val loss: 2.1940 | val acc: 0.6204
 Training epoch 185
-train loss: 0.0918 | val loss: 2.5244 | val acc: 0.6033
+train loss: 0.0999 | val loss: 2.3967 | val acc: 0.6254
 Training epoch 186
-train loss: 0.1205 | val loss: 2.2248 | val acc: 0.6189
+train loss: 0.1029 | val loss: 2.2301 | val acc: 0.6225
 Training epoch 187
-train loss: 0.0959 | val loss: 2.2505 | val acc: 0.6204
+train loss: 0.0981 | val loss: 2.2574 | val acc: 0.6204
 Training epoch 188
-train loss: 0.1048 | val loss: 2.2814 | val acc: 0.6239
+train loss: 0.0886 | val loss: 2.4040 | val acc: 0.6289
 Training epoch 189
-train loss: 0.0914 | val loss: 2.2649 | val acc: 0.6239
+train loss: 0.0831 | val loss: 2.2639 | val acc: 0.6147
 Training epoch 190
-train loss: 0.1051 | val loss: 2.4670 | val acc: 0.6132
+train loss: 0.0866 | val loss: 2.4122 | val acc: 0.6325
 Training epoch 191
-train loss: 0.1007 | val loss: 2.2123 | val acc: 0.6239
+train loss: 0.0954 | val loss: 2.3134 | val acc: 0.6047
 Training epoch 192
-train loss: 0.0907 | val loss: 2.4003 | val acc: 0.6318
+train loss: 0.0861 | val loss: 2.3602 | val acc: 0.6232
 Training epoch 193
-train loss: 0.0949 | val loss: 2.3147 | val acc: 0.6211
+train loss: 0.0917 | val loss: 2.3072 | val acc: 0.6282
 Training epoch 194
-train loss: 0.0736 | val loss: 2.5198 | val acc: 0.6446
+train loss: 0.0939 | val loss: 2.3902 | val acc: 0.6296
 Training epoch 195
-train loss: 0.0916 | val loss: 2.2734 | val acc: 0.6140
+train loss: 0.0783 | val loss: 2.5122 | val acc: 0.6168
 Training epoch 196
-train loss: 0.0732 | val loss: 2.4204 | val acc: 0.6204
+train loss: 0.0812 | val loss: 2.3688 | val acc: 0.6154
 Training epoch 197
-train loss: 0.0921 | val loss: 2.5743 | val acc: 0.6189
+train loss: 0.1206 | val loss: 2.4263 | val acc: 0.5983
 Training epoch 198
-train loss: 0.1314 | val loss: 2.3443 | val acc: 0.6282
+train loss: 0.1123 | val loss: 2.3595 | val acc: 0.6268
 Training epoch 199
-train loss: 0.0797 | val loss: 2.3269 | val acc: 0.6332
+train loss: 0.0937 | val loss: 2.4826 | val acc: 0.6175
 Training epoch 200
-train loss: 0.0801 | val loss: 2.2968 | val acc: 0.6204
-Training took 3 minutes and 18 seconds
-Final test acc: 0.6137
+train loss: 0.1015 | val loss: 2.3613 | val acc: 0.6175
+Training took 4 minutes and 0 seconds
+Final test acc: 0.6130
