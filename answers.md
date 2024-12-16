@@ -58,6 +58,10 @@ In conclusion, choosing a batch size involves a trade-off. Larger batch sizes of
 
 ## b) (9 points) Train the model setting dropout to each value in {0.01, 0.25, 0.5} while keep ing all other hyperparameters at their default values. Report the final validation and test accuracies and plot the training and validation losses for the three configurations. Analyze and explain the results. 
 
+TODO: ver melhor este again, foi o que os resultados mudaram mais
+-> val acc > test acc para todos
+-> observações dos gráficos não me pareceram mto accurate ja
+
 dropout-0.01:
 val acc: 0.5776
 test acc: 0.5700
@@ -74,17 +78,18 @@ Analysis of Dropout Rates: 0.01, 0.25, and 0.5
 At first glance, the training and validation loss plots for the three models appear similar. However, closer inspection reveals key differences worth explaining.
 
 Smallest Dropout (0.01)
-The model with the smallest dropout rate of 0.01 exhibits a test accuracy lower than the validation accuracy, indicating overfitting. With minimal regularization, the model closely fits the training data, overly relying on specific neurons, which limits its ability to generalize effectively.
-
-Largest Dropout (0.5)
-In contrast, the model with the largest dropout rate of 0.5 achieves the highest validation and test accuracies, effectively reducing overfitting through strong regularization. However, this comes at the cost of a higher training loss (stabilizing at around 1, the highest of the three), as the stronger dropout slows the model’s convergence by delaying the learning of specific patterns.
+The model with the smallest dropout rate of 0.01 exhibits the lowest values of test and validation accuracy among the three, suggesting that minimal dropout leads to higher overfitting. This happens because with minimal regularization, the model closely fits the training data, overly relying on specific neurons, which limits its ability to generalize effectively.
 
 Moderate Dropout (0.25)
-The model with a dropout rate of 0.25 strikes a balance between the extremes. It prevents overfitting seen in the 0.01 model while maintaining a good fit to the training data. This creates a compromise between regularization and learning capacity, enabling faster convergence than the 0.5 model while still achieving good generalization.
+The model with a dropout rate of 0.25 has better accuracy than the previous model, as a more substancial regularization prevents overfitting. We have a higher training loss which is balanced with a lower validation loss after stabilizing. 
+
+Largest Dropout (0.5)
+The model with 0.5 dropout rate has the highest validation accuracy, but doesn't improve the test accuracy any further regarding the 0.25 model, indicating potential over-regularization. Again, training loss increases, as the model struggles to learn due to the high rate of dropout, but validation stabilizes at a similar value to the previous model.
 
 Conclusion: Trade-offs in Dropout Rates
-Overall, the dropout-0.5 model achieves the best generalization and test accuracy, making it the most effective configuration of the three. However, if training time is a constraint, the dropout-0.25 model is a viable alternative, offering solid generalization with faster convergence.
+The trend we can see from the plots if we compare them in sequence, from smallest to largest dropout, is that the training loss keeps getting higher while the validation loss keeps settling on a lower value with more stability (lower ups and downs).
 
+The dropout rate of 0.25 provides the best tradeoff between reducing overfitting and maintaining model capacity, as seen in both accuracy metrics and the loss behavior. While dropout 0.5 slightly increases validation accuracy, it does not translate into improved test accuracy, likely due to over-regularization.
 
 
 ## c) (8 points) Using a batch_size of 1024, train the default model while setting the momentum parameter to each value in {0.0; 0.9} (use the -momentum flag). For the two configurations, plot the train and validation losses and report the test and validation accuracies. Explain the differences in performance.
