@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 import time
 import utils
 
-
 class LinearModel(object):
     def __init__(self, n_classes, n_features, **kwargs):
         self.W = np.zeros((n_classes, n_features))
@@ -38,7 +37,6 @@ class LinearModel(object):
         n_possible = y.shape[0]
         return n_correct / n_possible
 
-
 class Perceptron(LinearModel):
     def update_weight(self, x_i, y_i, **kwargs):
         """
@@ -46,8 +44,16 @@ class Perceptron(LinearModel):
         y_i (scalar): the gold label for that example
         other arguments are ignored
         """
-        raise NotImplementedError # Q1.1 (a)
+        # Q1.1a
 
+        # Calculate predicted y
+        y_hat = self.predict(x_i)
+        # eta = kwargs.get("learning_rate", 1)
+
+        # update weights if prediction is incorrect
+        if y_hat != y_i: 
+            self.W[y_i] += y_i * x_i  
+            self.W[y_hat] -= y_i * x_i
 
 class LogisticRegression(LinearModel):
     def update_weight(self, x_i, y_i, learning_rate=0.001, l2_penalty=0.0, **kwargs):
@@ -56,18 +62,48 @@ class LogisticRegression(LinearModel):
         y_i: the gold label for that example
         learning_rate (float): keep it at the default value for your plots
         """
-        raise NotImplementedError # Q1.2 (a,b)
 
+        # Compute scores for the classes:
+        scores = np.dot(self.W, x_i)
+
+        # Softmax transformation
+        exp_scores = np.exp(scores)        
+        probs = exp_scores / np.sum(exp_scores)
+
+        # Compute the gradient of the loss with respect to the weights
+        one_hot_y = np.zeros_like(scores)
+        one_hot_y[y_i] = 1
+        gradient = np.outer(probs - one_hot_y, x_i) + l2_penalty * self.W
+
+        # Update the weights using the gradient
+        self.W -= learning_rate * gradient
 
 class MLP(object):
     def __init__(self, n_classes, n_features, hidden_size):
-        # Initialize an MLP with a single hidden layer.
-        raise NotImplementedError # Q1.3 (a)
+        
+        # Input-to-hidden layer
+        self.W1 = np.random.normal(0.1, 0.1, (n_features, hidden_size))
+        self.b1 = np.zeros((1, hidden_size))
+
+        # Hidden-to-output layer
+        self.W2 = np.random.normal(0.1, 0.1, (hidden_size, n_classes))
+        self.b2 = np.zeros((1, n_classes))
+
+    def relu(self, x):
+        return np.maximum(0, x)
+    
+    def relu_derivative(self, x):
+        """Compute the derivative of ReLU."""
+        return np.where( x > 0, 1, 0)
+
+    def softmax(self, x):
+        x = x - np.max(x)
+        probs = np.exp(x) / np.sum(np.exp(x))
+        return probs
 
     def predict(self, X):
-        # Compute the forward pass of the network. At prediction time, there is
-        # no need to save the values of hidden nodes.
-        raise NotImplementedError # Q1.3 (a)
+        hidden = self.relu(np.dot(X, self.W1) + self.b1)
+        return np.argmax(np.dot(hidden, self.W2) + self.b2, axis=1)
 
     def evaluate(self, X, y):
         """
@@ -79,13 +115,65 @@ class MLP(object):
         n_correct = (y == y_hat).sum()
         n_possible = y.shape[0]
         return n_correct / n_possible
+    
+    def forward_pass(self, X):
+        """Compute the forward pass."""
+        hidden = self.relu(np.dot(X, self.W1) + self.b1)
+        logits = np.dot(hidden, self.W2) + self.b2
+        output = self.softmax(logits)
+        return hidden, output
+    
+    def compute_loss(self, output, target):
+        """Compute the cross-entropy loss."""
+        one_hot_target = np.zeros_like(output)
+        one_hot_target[np.arange(len(target)), target] = 1
+        return -np.sum(one_hot_target * np.log(output + 1e-6))  # Add epsilon for numerical stability
+    
+    def backpropagate(self, X, hidden, output, target):
+        """Compute the gradients for weights and biases."""
+        one_hot_target = np.zeros_like(output)
+        one_hot_target[np.arange(len(target)), target] = 1
+        d_output = output - one_hot_target
+        
+        grad_W2 = np.dot(hidden.T, d_output)
+        grad_b2 = d_output
+
+        d_hidden = np.dot(d_output, self.W2.T) * self.relu_derivative(hidden)
+        grad_W1 = np.dot(X.T, d_hidden)
+        grad_b1 = d_hidden
+        
+        return grad_W1, grad_b1, grad_W2, grad_b2
 
     def train_epoch(self, X, y, learning_rate=0.001, **kwargs):
         """
-        Dont forget to return the loss of the epoch.
+        Train for one epoch using stochastic gradient descent (no batching).
+        Returns the average loss for the epoch.
         """
-        raise NotImplementedError # Q1.3 (a)
+        total_loss = 0
+        num_samples = X.shape[0]
 
+        # Iterate over each sample
+        for x_i, y_i in zip(X, y):
+            # Get the current sample
+            y_i = np.array([y_i])
+            # Forward pass
+            hidden, output = self.forward_pass(x_i.reshape(1, -1))
+
+            # Compute loss (cross-entropy)
+            loss = self.compute_loss(output, y_i)
+            total_loss += loss
+
+            # Backpropagation
+            grad_W1, grad_b1, grad_W2, grad_b2 = self.backpropagate(x_i.reshape(1, -1), hidden, output, y_i)
+
+            # Update weights and biases
+            self.W1 -= learning_rate * grad_W1
+            self.b1 -= learning_rate * grad_b1
+            self.W2 -= learning_rate * grad_W2
+            self.b2 -= learning_rate * grad_b2
+
+        # Return the average loss for the epoch
+        return total_loss / num_samples
 
 def plot(epochs, train_accs, val_accs, filename=None):
     plt.xlabel('Epoch')
@@ -106,7 +194,6 @@ def plot_loss(epochs, loss, filename=None):
         plt.savefig(filename, bbox_inches='tight')
     plt.show()
 
-
 def plot_w_norm(epochs, w_norms, filename=None):
     plt.xlabel('Epoch')
     plt.ylabel('W Norm')
@@ -115,7 +202,6 @@ def plot_w_norm(epochs, w_norms, filename=None):
     if filename:
         plt.savefig(filename, bbox_inches='tight')
     plt.show()
-
 
 def main():
     parser = argparse.ArgumentParser()
@@ -217,7 +303,6 @@ def main():
     with open(f"Q1-{opt.model}-results.txt", "w") as f:
         f.write(f"Final test acc: {model.evaluate(test_X, test_y)}\n")
         f.write(f"Training time: {minutes} minutes and {seconds} seconds\n")
-
 
 if __name__ == '__main__':
     main()
