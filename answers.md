@@ -63,16 +63,16 @@ TODO: ver melhor este again, foi o que os resultados mudaram mais
 -> observações dos gráficos não me pareceram mto accurate ja
 
 dropout-0.01:
-val acc: 0.5776
-test acc: 0.5700
+val acc: 0.5762
+test acc: 0.5803
 
 dropout-0.25:
-val acc: 0.5969
-test acc: 0.5887
+val acc: 0.6083
+test acc: 0.6057
 
 dropout-0.5:
-val acc: 0.6054
-test acc: 0.5887
+val acc: 0.5990
+test acc: 0.5960
 
 Analysis of Dropout Rates: 0.01, 0.25, and 0.5
 At first glance, the training and validation loss plots for the three models appear similar. However, closer inspection reveals key differences worth explaining.
@@ -84,12 +84,12 @@ Moderate Dropout (0.25)
 The model with a dropout rate of 0.25 has better accuracy than the previous model, as a more substancial regularization prevents overfitting. We have a higher training loss which is balanced with a lower validation loss after stabilizing. 
 
 Largest Dropout (0.5)
-The model with 0.5 dropout rate has the highest validation accuracy, but doesn't improve the test accuracy any further regarding the 0.25 model, indicating potential over-regularization. Again, training loss increases, as the model struggles to learn due to the high rate of dropout, but validation stabilizes at a similar value to the previous model.
+The model with 0.5 dropout rate doesn't improve relating to the previous one on both accuracies, indicating potential over-regularization, but still performs better than the first model with the lowest dropout. Again, the training loss increases in relation to the previous model, as it struggles to learn due to the high rate of dropout, but validation stabilizes at a similar value to the previous model.
 
 Conclusion: Trade-offs in Dropout Rates
-The trend we can see from the plots if we compare them in sequence, from smallest to largest dropout, is that the training loss keeps getting higher while the validation loss keeps settling on a lower value with more stability (lower ups and downs).
+The trend we can see from the plots if we compare them in sequence, from smallest to largest dropout, is that the training loss keeps getting higher while the validation loss keeps settling on a lower value with more stability (without so many ups and downs).
 
-The dropout rate of 0.25 provides the best tradeoff between reducing overfitting and maintaining model capacity, as seen in both accuracy metrics and the loss behavior. While dropout 0.5 slightly increases validation accuracy, it does not translate into improved test accuracy, likely due to over-regularization.
+The dropout rate of 0.25 provides the best tradeoff between reducing overfitting and maintaining model capacity, as seen in both accuracy metrics and the loss behavior.
 
 
 ## c) (8 points) Using a batch_size of 1024, train the default model while setting the momentum parameter to each value in {0.0; 0.9} (use the -momentum flag). For the two configurations, plot the train and validation losses and report the test and validation accuracies. Explain the differences in performance.
