@@ -1,0 +1,203 @@
+(IST_DL21_Env) kiko@kiko-VivoBook-ASUSLaptop-X421EQ-S433EQ:~/repos/AP/ap-homeworks/hw2/hw2-q2$ python3 hw2-q2.py -learning_rate 0.01
+
+Training epoch 1
+Training loss: 1.2724
+Valid loss: 1.1759
+Valid acc: 0.5292
+
+Training epoch 2
+Training loss: 1.1897
+Valid loss: 1.0981
+Valid acc: 0.5605
+
+Training epoch 3
+Training loss: 1.1340
+Valid loss: 0.9732
+Valid acc: 0.6332
+
+Training epoch 4
+Training loss: 1.0911
+Valid loss: 1.1229
+Valid acc: 0.5570
+
+Training epoch 5
+Training loss: 1.0572
+Valid loss: 1.0357
+Valid acc: 0.5791
+
+Training epoch 6
+Training loss: 1.0293
+Valid loss: 0.8509
+Valid acc: 0.6766
+
+Training epoch 7
+Training loss: 1.0051
+Valid loss: 1.0305
+Valid acc: 0.6425
+
+Training epoch 8
+Training loss: 0.9849
+Valid loss: 1.0045
+Valid acc: 0.6225
+
+Training epoch 9
+Training loss: 0.9662
+Valid loss: 0.9555
+Valid acc: 0.6560
+
+Training epoch 10
+Training loss: 0.9492
+Valid loss: 0.8336
+Valid acc: 0.6845
+
+Training epoch 11
+Training loss: 0.9342
+Valid loss: 0.8283
+Valid acc: 0.6987
+
+Training epoch 12
+Training loss: 0.9199
+Valid loss: 0.7613
+Valid acc: 0.7222
+
+Training epoch 13
+Training loss: 0.9072
+Valid loss: 0.9044
+Valid acc: 0.6560
+
+Training epoch 14
+Training loss: 0.8953
+Valid loss: 0.8044
+Valid acc: 0.7009
+
+Training epoch 15
+Training loss: 0.8844
+Valid loss: 0.7855
+Valid acc: 0.7144
+
+Training epoch 16
+Training loss: 0.8739
+Valid loss: 0.9424
+Valid acc: 0.6638
+
+Training epoch 17
+Training loss: 0.8644
+Valid loss: 0.7432
+Valid acc: 0.7215
+
+Training epoch 18
+Training loss: 0.8549
+Valid loss: 0.8459
+Valid acc: 0.6980
+
+Training epoch 19
+Training loss: 0.8460
+Valid loss: 0.7918
+Valid acc: 0.7187
+
+Training epoch 20
+Training loss: 0.8381
+Valid loss: 0.7487
+Valid acc: 0.7329
+
+Training epoch 21
+Training loss: 0.8302
+Valid loss: 0.9197
+Valid acc: 0.6724
+
+Training epoch 22
+Training loss: 0.8225
+Valid loss: 0.7573
+Valid acc: 0.7208
+
+Training epoch 23
+Training loss: 0.8152
+Valid loss: 0.7729
+Valid acc: 0.7172
+
+Training epoch 24
+Training loss: 0.8078
+Valid loss: 0.8242
+Valid acc: 0.7187
+
+Training epoch 25
+Training loss: 0.8006
+Valid loss: 0.6911
+Valid acc: 0.7472
+
+Training epoch 26
+Training loss: 0.7941
+Valid loss: 0.6860
+Valid acc: 0.7628
+
+Training epoch 27
+Training loss: 0.7876
+Valid loss: 0.8173
+Valid acc: 0.7144
+
+Training epoch 28
+Training loss: 0.7813
+Valid loss: 0.6985
+Valid acc: 0.7450
+
+Training epoch 29
+Training loss: 0.7754
+Valid loss: 0.8646
+Valid acc: 0.6916
+
+Training epoch 30
+Training loss: 0.7696
+Valid loss: 0.7915
+Valid acc: 0.7322
+
+Training epoch 31
+Training loss: 0.7638
+Valid loss: 0.7377
+Valid acc: 0.7222
+
+Training epoch 32
+Training loss: 0.7580
+Valid loss: 0.8236
+Valid acc: 0.7115
+
+Training epoch 33
+Training loss: 0.7524
+Valid loss: 0.7531
+Valid acc: 0.7429
+
+Training epoch 34
+Training loss: 0.7470
+Valid loss: 0.7710
+Valid acc: 0.7365
+
+Training epoch 35
+Training loss: 0.7418
+Valid loss: 0.6895
+Valid acc: 0.7528
+
+Training epoch 36
+Training loss: 0.7366
+Valid loss: 0.7336
+Valid acc: 0.7393
+
+Training epoch 37
+Training loss: 0.7314
+Valid loss: 0.7409
+Valid acc: 0.7286
+
+Training epoch 38
+Training loss: 0.7262
+Valid loss: 0.8294
+Valid acc: 0.7229
+
+Training epoch 39
+Training loss: 0.7212
+Valid loss: 0.7930
+Valid acc: 0.7179
+
+Training epoch 40
+Training loss: 0.7166
+Valid loss: 0.6783
+Valid acc: 0.7635
+Final Test acc: 0.7623
+Number of trainable parameters: 755718

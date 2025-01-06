@@ -20,29 +20,48 @@ class ConvBlock(nn.Module):
             in_channels,
             out_channels,
             kernel_size,
-            padding=None,
+            padding=1,
             maxpool=True,
             batch_norm=True,
-            dropout=0.0
+            dropout=0.1
         ):
         super().__init__()
 
-        # Q2.1. Initialize convolution, maxpool, activation and dropout layers 
-        
-        
-        # Q2.2 Initialize batchnorm layer 
-        
-        raise NotImplementedError
+        # Q2.1. Initialize convolution, maxpool, activation and dropout layers
+        self.conv = nn.Conv2d(
+            in_channels=in_channels,
+            out_channels=out_channels,
+            kernel_size=kernel_size,
+            stride=1,
+            padding=padding
+        )
+        self.activation = nn.ReLU()
+        self.maxpool = nn.MaxPool2d(kernel_size=2, stride=2) if maxpool else nn.Identity()
+        self.dropout = nn.Dropout(p=dropout)
+
+        # Q2.2 Initialize batchnorm layer
+        self.batch_norm = nn.BatchNorm2d(out_channels) if batch_norm else nn.Identity()
 
     def forward(self, x):
         # input for convolution is [b, c, w, h]
+        # b -> batch size
+        # c -> number of channels
+        # w -> width
+        # h -> height
         
         # Implement execution of layers in right order
+        x = self.conv(x)
+        
+        # Q2.2
+        x = self.batch_norm(x)
+        
+        x = self.activation(x)
+        x = self.maxpool(x)
+        x = self.dropout(x)
+        return x
 
-        raise NotImplementedError
 
-
-class CNN(nn.Module):
+class CNN(nn.Module):       
     def __init__(self, dropout_prob, maxpool=True, batch_norm=True, conv_bias=True):
         super(CNN, self).__init__()
         channels = [3, 32, 64, 128]
@@ -52,25 +71,54 @@ class CNN(nn.Module):
         self.batch_norm = batch_norm
 
         # Initialize convolutional blocks
+        self.conv_blocks = nn.Sequential(
+            ConvBlock(channels[0], channels[1], kernel_size=3, padding=1, maxpool=maxpool, batch_norm=batch_norm, dropout=dropout_prob),
+            ConvBlock(channels[1], channels[2], kernel_size=3, padding=1, maxpool=maxpool, batch_norm=batch_norm, dropout=dropout_prob),
+            ConvBlock(channels[2], channels[3], kernel_size=3, padding=1, maxpool=maxpool, batch_norm=batch_norm, dropout=dropout_prob)
+        )
         
+        # Q2.2 Global average pooling
+        self.global_avg_pool = nn.AdaptiveAvgPool2d((1, 1))  # Pool to (1, 1) output
+       
         # Initialize layers for the MLP block
-        # For Q2.2 initalize batch normalization
+        # Q2.1/Q2.2: Flatten the output of the convolution part
+        self.fc1 = nn.Linear(128, fc1_out_dim) if batch_norm else nn.Linear(128 * 6 * 6, fc1_out_dim)
         
-
+        self.fc2 = nn.Linear(fc1_out_dim, fc2_out_dim)
+        self.fc3 = nn.Linear(fc2_out_dim, 6)
+        self.dropout = nn.Dropout(p=dropout_prob)
+        self.activation = nn.ReLU()
+        
+        # Q2.2 initalize batch normalization in MLP
+        self.batch_norm_fc1 = nn.BatchNorm1d(fc1_out_dim) if batch_norm else nn.Identity()
+         
+ 
     def forward(self, x):
+        # Reshape input for CNN
         x = x.reshape(x.shape[0], 3, 48, -1)
 
-        # Implement execution of convolutional blocks 
+        # Implement execution of convolutional blocks
+        x = self.conv_blocks(x)
         
-        # Flattent output of the last conv block
-        
-        # Implement MLP part
-        
-        # For Q2.2 implement global averag pooling
-        
+        # Q2.2 global average pooling
+        if(self.batch_norm):
+            x = self.global_avg_pool(x) 
 
+        # Flatten output of the last conv block
+        x = torch.flatten(x, start_dim=1)
+
+        # Implement MLP part
+        x = self.activation(self.fc1(x))
+        
+        # Q2.2 batch normalization (before dropout)
+        if(self.batch_norm):
+            x = self.batch_norm_fc1(x)
+        x = self.dropout(x)
+        
+        x = self.activation(self.fc2(x))
+        x = self.fc3(x)
+    
         return F.log_softmax(x, dim=1)
- 
 
 def train_batch(X, y, model, optimizer, criterion, **kwargs):
     """
@@ -122,9 +170,10 @@ def plot(epochs, plottable, ylabel='', name=''):
     plt.savefig('%s.pdf' % (name), bbox_inches='tight')
 
 
-def get_number_trainable_params(model):
-    raise NotImplementedError
-
+def get_number_trainable_params(model): 
+    model_parameters = filter(lambda p: p.requires_grad, model.parameters())
+    return sum([np.prod(p.size()) for p in model_parameters])
+    
 
 def plot_file_name_sufix(opt, exlude):
     """
@@ -218,7 +267,7 @@ def main():
     plot(epochs, train_mean_losses, ylabel='Loss', name='CNN-3-train-loss-{}-{}'.format(sufix, test_acc_str))
     plot(epochs, valid_accs, ylabel='Accuracy', name='CNN-3-valid-accuracy-{}-{}'.format(sufix, test_acc_str))
 
-    print('Number of trainable parameters: ', get_number_trainable_params(model))
+    print('Number of trainable parameters:', get_number_trainable_params(model))
 
 if __name__ == '__main__':
     main()
