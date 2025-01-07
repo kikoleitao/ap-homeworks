@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 from torch.nn.utils.rnn import pack_padded_sequence as pack
 from torch.nn.utils.rnn import pad_packed_sequence as unpack
+import torch.nn.functional as F
 
 
 def reshape_state(state):
@@ -20,8 +21,10 @@ class BahdanauAttention(nn.Module):
 
     def __init__(self, hidden_size):
         super(BahdanauAttention, self).__init__()
-        
-        raise NotImplementedError("Add your implementation.")
+        self.Ws = nn.Linear(hidden_size, hidden_size, bias=False)
+        self.Wh = nn.Linear(hidden_size, hidden_size, bias=False)
+        self.v = nn.Linear(hidden_size, 1, bias=False)
+        self.out = nn.Linear(hidden_size * 2, hidden_size)
 
     def forward(self, query, encoder_outputs, src_lengths):
         """
@@ -32,7 +35,37 @@ class BahdanauAttention(nn.Module):
             attn_out:   (batch_size, max_tgt_len, hidden_size) - attended vector
         """
 
-        raise NotImplementedError("Add your implementation.")
+        batch_size, max_src_len, hidden_size = encoder_outputs.size()
+
+        # Transform query and encoder outputs
+        query_transformed = self.Ws(query)  # (batch_size, max_tgt_len, hidden_size)
+        encoder_transformed = self.Wh(encoder_outputs)  # (batch_size, max_src_len, hidden_size)
+
+        # Expand and repeat query for alignment
+        query_expanded = query_transformed.unsqueeze(2).repeat(1, 1, max_src_len, 1)  # (batch_size, max_tgt_len, max_src_len, hidden_size)
+        encoder_expanded = encoder_transformed.unsqueeze(1)  # (batch_size, 1, max_src_len, hidden_size)
+
+        # Compute scores
+        scores = self.v(torch.tanh(query_expanded + encoder_expanded)).squeeze(-1)  # (batch_size, max_tgt_len, max_src_len)
+
+        # Mask padding positions in the source sequence
+        mask = (torch.arange(max_src_len).unsqueeze(0).to(src_lengths.device) < src_lengths.unsqueeze(1))
+        mask = mask.unsqueeze(1)  # (batch_size, 1, max_src_len)
+        scores = scores.masked_fill(~mask, float('-inf'))  # Apply mask
+
+        # Compute attention weights
+        attn_weights = F.softmax(scores, dim=-1)  # (batch_size, max_tgt_len, max_src_len)
+
+        # Compute context vector as a weighted sum of encoder outputs
+        context = torch.bmm(attn_weights, encoder_outputs)  # (batch_size, max_tgt_len, hidden_size)
+
+        # Concatenate context and query
+        concat = torch.cat((context, query), dim=2)  # (batch_size, max_tgt_len, hidden_size * 2)
+
+        # Pass through a linear layer to get the attention-enhanced state
+        attn_out = torch.tanh(self.out(concat))  # (batch_size, max_tgt_len, hidden_size)
+
+        return attn_out, attn_weights
 
     def sequence_mask(self, lengths):
         """
@@ -88,14 +121,25 @@ class Encoder(nn.Module):
         #   (after passing them to the LSTM)
         #############################################
         
+        # Embedding the source sequence
+        embedded = self.dropout(self.embedding(src))
 
+        # Packing the padded sequences
+        packed_input = pack(embedded, lengths, batch_first=True, enforce_sorted=False)
+
+        # Passing through LSTM
+        packed_output, (hidden, cell) = self.lstm(packed_input)
+
+        # Unpacking the sequences
+        encoder_outputs, _ = unpack(packed_output, batch_first=True)
+
+        return encoder_outputs, (hidden, cell)
         #############################################
         # END OF YOUR CODE
         #############################################
         # enc_output: (batch_size, max_src_len, hidden_size)
         # final_hidden: tuple with 2 tensors
         # each tensor is (num_layers * num_directions, batch_size, hidden_size)
-        raise NotImplementedError("Add your implementation.")
 
 
 class Decoder(nn.Module):
@@ -158,7 +202,43 @@ class Decoder(nn.Module):
         #         src_lengths,
         #     )
         #############################################
-        
+
+        # a)
+        # embedded = self.dropout(self.embedding(tgt))
+        # outputs = []
+        # dec_hidden = dec_state
+        # # Decoder LSTM step-wise
+
+        # for t in range(tgt.size(1)):
+            
+        #     input_t = embedded[:, t, :].unsqueeze(1)  # Current timestep input
+        #     output, dec_hidden = self.lstm(input_t, dec_hidden)
+        #     output = self.dropout(output)
+
+        #     if self.attn is not None:
+        #         output = self.attn(output, encoder_outputs, src_lengths)
+        #     outputs.append(output)
+            
+        # outputs = torch.cat(outputs, dim=1)
+        # return outputs, dec_hidden
+
+        # b)
+        embedded = self.dropout(self.embedding(tgt))  # (batch_size, max_tgt_len, hidden_size)
+        outputs = []
+        dec_hidden = dec_state
+
+        for t in range(tgt.size(1)):  # Loop over target sequence length
+            input_t = embedded[:, t, :].unsqueeze(1)  # (batch_size, 1, hidden_size)
+            output, dec_hidden = self.lstm(input_t, dec_hidden)  # LSTM step
+            # output = output.squeeze(1)  # (batch_size, hidden_size)
+            if self.attn is not None:
+                output, _ = self.attn(output, encoder_outputs, src_lengths)  # Attention mechanism
+            output = self.dropout(output)
+            outputs.append(output)
+
+        outputs = torch.cat(outputs, dim=1)  # (batch_size, max_tgt_len, hidden_size)
+
+        return outputs, dec_hidden
 
         #############################################
         # END OF YOUR CODE
@@ -166,8 +246,6 @@ class Decoder(nn.Module):
         # outputs: (batch_size, max_tgt_len, hidden_size)
         # dec_state: tuple with 2 tensors
         # each tensor is (num_layers, batch_size, hidden_size)
-        raise NotImplementedError("Add your implementation.")
-
 
 class Seq2Seq(nn.Module):
     def __init__(

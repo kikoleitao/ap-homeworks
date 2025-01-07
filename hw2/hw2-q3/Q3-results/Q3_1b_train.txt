@@ -1,0 +1,65 @@
+Loading data...
+Training...
+Epoch: [1/20], Loss: 1.8085
+Validation error rate: 0.5297
+New best error rate found: 0.5297
+Saving model
+Epoch: [2/20], Loss: 1.1729
+Validation error rate: 0.3238
+New best error rate found: 0.3238
+Saving model
+Epoch: [3/20], Loss: 0.8022
+Validation error rate: 0.2802
+New best error rate found: 0.2802
+Saving model
+Epoch: [4/20], Loss: 0.4712
+Validation error rate: 0.2893
+Epoch: [5/20], Loss: 0.6894
+Validation error rate: 0.2585
+New best error rate found: 0.2585
+Saving model
+Epoch: [6/20], Loss: 0.7955
+Validation error rate: 0.2508
+New best error rate found: 0.2508
+Saving model
+Epoch: [7/20], Loss: 0.6703
+Validation error rate: 0.2398
+New best error rate found: 0.2398
+Saving model
+Epoch: [8/20], Loss: 0.4112
+Validation error rate: 0.2269
+New best error rate found: 0.2269
+Saving model
+Epoch: [9/20], Loss: 0.7212
+Validation error rate: 0.2205
+New best error rate found: 0.2205
+Saving model
+Epoch: [10/20], Loss: 0.4218
+Validation error rate: 0.2317
+Epoch: [11/20], Loss: 0.5295
+Validation error rate: 0.2333
+Epoch: [12/20], Loss: 0.7167
+Validation error rate: 0.2200
+New best error rate found: 0.2200
+Saving model
+Epoch: [13/20], Loss: 0.5676
+Validation error rate: 0.2321
+Epoch: [14/20], Loss: 0.4528
+Validation error rate: 0.2270
+Epoch: [15/20], Loss: 0.3919
+Validation error rate: 0.2294
+Epoch: [16/20], Loss: 0.3672
+Validation error rate: 0.2194
+New best error rate found: 0.2194
+Saving model
+Epoch: [17/20], Loss: 0.5268
+Validation error rate: 0.2248
+Epoch: [18/20], Loss: 0.3665
+Validation error rate: 0.2166
+New best error rate found: 0.2166
+Saving model
+Epoch: [19/20], Loss: 0.2959
+Validation error rate: 0.2216
+Epoch: [20/20], Loss: 0.3096
+Validation error rate: 0.2253
+Best validation error rate: 0.2166

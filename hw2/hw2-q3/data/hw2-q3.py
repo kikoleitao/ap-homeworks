@@ -68,7 +68,7 @@ def train(data, model, lr, n_epochs, checkpoint_name, max_len=50):
             src_lengths = src_lengths.to(device)
 
             optimizer.zero_grad()
-            outputs, _ = model(src, src_lengths, tgt)
+            outputs, _ = model(src, src_lengths, tgt[:, :-1])
             loss = criterion(
                 outputs.reshape(-1, outputs.shape[-1]), tgt[:, 1:].reshape(-1)
             )
@@ -231,7 +231,32 @@ def nucleus_sampling(logits, p=0.8):
     # 3. Rescale the distribution and sample from the resulting set of tokens.
     # Implementation of the steps as described above:
 
-    raise NotImplementedError("Add your implementation.")
+    # 1. Convert logits to probabilities using softmax
+    probs = torch.softmax(logits, dim=-1)
+
+    # 2. Sort probabilities in descending order and get corresponding indices
+    sorted_probs, sorted_indices = torch.sort(probs, descending=True)
+
+    # 3. Compute cumulative probabilities
+    cumulative_probs = torch.cumsum(sorted_probs, dim=-1)
+
+    # 4. Find the cutoff index where cumulative probability exceeds p
+    cutoff_index = torch.searchsorted(cumulative_probs, p, right=True).item()
+
+    # 5. Keep only the top-p tokens (truncate probabilities and indices)
+    top_p_probs = sorted_probs[:cutoff_index + 1]
+    top_p_indices = sorted_indices[:cutoff_index + 1]
+
+    # 6. Normalize the probabilities of the top-p tokens
+    top_p_probs = top_p_probs / torch.sum(top_p_probs)
+
+    # 7. Sample from the top-p tokens
+    next_token = torch.multinomial(top_p_probs, 1).item()
+
+    # 8. Get the index of the sampled token in the original vocabulary
+    next_token_index = top_p_indices[next_token]
+
+    return next_token_index
 
 
 def main(args):
@@ -320,6 +345,8 @@ def main(args):
         )
     else:
         print("Testing...")
+        print("Loading model from %s" % (checkpoint_name,)) 
+    
 
         model.load_state_dict(torch.load(checkpoint_name, weights_only=True))
 

@@ -1,0 +1,16 @@
+Loading data...
+Testing...
+Loading model from attn.pt
+Test CER: 0.2265, Test WER: 0.7400
+Printing first 10 examples with multiple predictions:
+('remainder', {'romander', 'remandere', 'remander'})
+('Jingchuan', {'Jingquine', 'Jingtuan', 'Zinghthwan'})
+('scare', {'skare', 'scar'})
+('glossal', {'glossel', 'glossal'})
+('touchedness', {'tutchidness', 'tutchidenis', 'tutchedness'})
+('alkaloses', {'alcolousis', 'alcolocise', 'alcolosise'})
+('companions', {'companniens', 'Kempanians', 'compannians'})
+('Fingal', {'fingaal', 'fingaall'})
+('grievances', {'greevences', 'greavences', 'greevencis'})
+('Bronx', {'Branx', 'Branks', 'brongs'})
+Test WER@3: 0.6510
