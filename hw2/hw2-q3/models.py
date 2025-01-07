@@ -49,7 +49,8 @@ class BahdanauAttention(nn.Module):
         scores = self.v(torch.tanh(query_expanded + encoder_expanded)).squeeze(-1)  # (batch_size, max_tgt_len, max_src_len)
 
         # Mask padding positions in the source sequence
-        mask = (torch.arange(max_src_len).unsqueeze(0).to(src_lengths.device) < src_lengths.unsqueeze(1))
+        # mask = (torch.arange(max_src_len).unsqueeze(0).to(src_lengths.device) < src_lengths.unsqueeze(1))
+        mask = self.sequence_mask(src_lengths)  # (batch_size, max_src_len)
         mask = mask.unsqueeze(1)  # (batch_size, 1, max_src_len)
         scores = scores.masked_fill(~mask, float('-inf'))  # Apply mask
 
@@ -65,7 +66,7 @@ class BahdanauAttention(nn.Module):
         # Pass through a linear layer to get the attention-enhanced state
         attn_out = torch.tanh(self.out(concat))  # (batch_size, max_tgt_len, hidden_size)
 
-        return attn_out, attn_weights
+        return attn_out
 
     def sequence_mask(self, lengths):
         """
@@ -232,7 +233,7 @@ class Decoder(nn.Module):
             output, dec_hidden = self.lstm(input_t, dec_hidden)  # LSTM step
             # output = output.squeeze(1)  # (batch_size, hidden_size)
             if self.attn is not None:
-                output, _ = self.attn(output, encoder_outputs, src_lengths)  # Attention mechanism
+                output = self.attn(output, encoder_outputs, src_lengths)  # Attention mechanism
             output = self.dropout(output)
             outputs.append(output)
 
